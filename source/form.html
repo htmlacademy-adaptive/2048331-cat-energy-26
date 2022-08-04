@@ -10,10 +10,10 @@
   <header class="main-header">
 
     <a class="main-header__logo">
-      <img src="../source/img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
+      <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
     </a>
     <a class="main-header__logo-name">
-      <img src="../source/img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
+      <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
     </a>
 
     <nav class="main-navigation">
@@ -36,17 +36,17 @@
     </nav>
   </header>
 
-  <main class="custom">
+  <main class="form-custom">
 
-    <header class="custom__header hero">
+    <header class="form-custom__header hero">
       <h1 class="hero__title heading">Подбор программы</h1>
       <p class="hero__text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </header>
 
-    <section class="custom__order">
+    <section class="form-custom__order">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <form class="custom__form order-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form-custom__form order-form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="order-form__group">
 
@@ -66,7 +66,7 @@
         </fieldset>
 
         <fieldset class="order-form__group">
-          <ul class="order-form__list order-form__radio">
+          <ul class="order-form__list order-form--radio">
             <li class="order-form__item">
               <label class="control radio">
                 <input class="visually-hidden control__input" type="radio" value="weight-loss" checked>
@@ -91,29 +91,29 @@
           </ul>
         </fieldset>
 
-        <p class="order-form__title">Контактные данные
-          (владельца кота)</p>
+        <h2 class="order-form__title">Контактные данные
+          (владельца кота)</h2>
         <p class="order-form__group  field">
-          <label class="field-label">E-mail:*
-            <input class="field-input" type="email" name="user-email" placeholder="kuklachev@gmail.com" required>
+          <label class="field__label">E-mail:*
+            <input class="field__input" type="email" name="user-email" placeholder="kuklachev@gmail.com" required>
           </label>
         </p>
         <p class="order-form__group  field">
-          <label class="field-label">Телефон:*
-            <input class="field-input" type="tel" name="user-phone" pattern="8([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+          <label class="field__label">Телефон:*
+            <input class="field__input" type="tel" name="user-phone" pattern="8([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
               placeholder="8 (960) 900-60-90">
           </label>
         </p>
         <p class="order-form__group  field">
-          <label class="order-form__title">Комментарий
-            <textarea class="field-input" rows="5" name="user-message"
+          <label class="field__label">Комментарий
+            <textarea class="field__input" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </p>
 
         <fieldset class="order-form__group">
           <legend class="order-form__title">Дополнительно</legend>
-          <ul class="order-form__list order-form__checkbox">
+          <ul class="order-form__list order-form--checkbox">
             <li class="order-form__item">
               <label class="control checkbox">
                 <input class="visually-hidden control__input" type="checkbox" checked>
@@ -173,7 +173,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo">
-        <img src="../source/img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
+        <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
