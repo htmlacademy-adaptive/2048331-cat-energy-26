@@ -1,0 +1,18 @@
+.hero {
+  &::before {
+    /* основные стили псевдика */
+    background-image:
+      linear-gradient(
+        $basic-green,
+        $basic-green
+      ),
+      url("img/cat-index-background-mobile.jpg");
+  }
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+

@@ -8,8 +8,8 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
 
+  <header class="main-header">
     <a class="main-header__logo">
       <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
     </a>
@@ -42,7 +42,7 @@
     <!-- header -->
 
     <header class="main-content__header hero">
-      <h1 class="hero__title heading">Функциональное
+      <h1 class="hero__title main-heading">Функциональное
         питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <img src="img/index-can-mobile.png" alt="Фото банки корма.">
@@ -131,14 +131,19 @@
       </dl>
       <p class="live-example__text">Затраты на питание: 15 000 РУБ.</p>
       <img class="live-example__fat-cat" src="img/fat-cat-before.jpg" alt="Толстый котик.">
+      <img class="live-example__range-slider" src="img/slider.png" alt="#">
       <img class="live-example__thin-cat" src="img/thin-cat-after.jpg" alt="Худой котик.">
 
       <div class="live-example__control before-after">
-        <button class="before-after__button">Было</button>
+        <p class="before-after__button">
+          <span class="visually-hidden">Было</span>
+        </p>
         <div class="before-after__range">
           <div class="before-after__slider" tabindex="0"></div>
         </div>
-        <button class="before-after__button">Стало</button>
+        <p class="before-after__button">
+          <span class="visually-hidden">Стало</span>
+        </p>
       </div>
     </section>
 
