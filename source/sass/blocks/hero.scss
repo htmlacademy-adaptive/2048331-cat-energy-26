@@ -1,18 +1,36 @@
 .hero {
-  &::before {
-    /* основные стили псевдика */
-    background-image:
-      linear-gradient(
-        $basic-green,
-        $basic-green
-      ),
-      url("img/cat-index-background-mobile.jpg");
+  &--main-page {
+    text-align: center;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 320px;
+      height: 302px;
+      background-image:
+        linear-gradient(rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)),
+        url("../img/cat-index-background-mobile.jpg");
+      z-index: -1;
+    }
   }
 }
 
-.hero__text {
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
+.hero__title {
+  padding-left: 20px;
 }
 
+.hero__text {
+  &--main-page {
+    color: #ffffff;
+    line-height: 14px;
+    display: inline;
+  }
+  width: 226px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  padding-left: 20px;
+}

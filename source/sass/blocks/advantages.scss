@@ -1,0 +1,43 @@
+.advantages__button {
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 266px;
+  background-color: #d9d9d9;
+  padding: 30px 33px 19px 19px;
+  margin: 20px 20px;
+
+  &--slim {
+    background-image: url("../img/sitting-cat-back.png");
+    background-repeat: no-repeat;
+  }
+
+  &--pro {
+    background-image: url("../img/walking-cat-back.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__title {
+  font-size: 34px;
+  line-height: 37px;
+}
+
+.advantages__description {
+  width: 227px;
+  min-height: 90px;
+  text-align: left;
+}

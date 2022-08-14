@@ -1,10 +1,12 @@
 // Начните писать стили здесь
-@import "./blocks/common.scss";
+@import "./colors-variable.scss";
+@import "./common.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/main-content.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
 @import "./blocks/how-it-works.scss";
 @import "./blocks/live-example.scss";
 @import "./blocks/before-after.scss";
@@ -12,3 +14,6 @@
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/form-custom.scss";
+@import "./blocks/order-form.scss";
+@import "./blocks/field.scss";
