@@ -37,8 +37,8 @@
     </nav>
   </header>
   <main class="catalog">
-    <header class="catalog__header hero">
-      <h1 class="hero__title main-heading">Каталог продукции</h1>
+    <header class="catalog__header">
+      <h1 class="catalog__title main-heading">Каталог продукции</h1>
     </header>
 
     <section class="catalog__cards">
@@ -166,7 +166,7 @@
 
     <div class="show-more">
       <b class="show-more__title">Показать еще 100500 товаров</b>
-      <p>На самом деле вкусов гораздо больше!</p>
+      <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
       <button class="show-more__submit button" type="submit">показать все</button>
     </div>
 
@@ -210,14 +210,15 @@
       <h2 class="contacts__title">
         <span class="visually-hidden">контакты</span>
       </h2>
-      <!-- явно нужна обертка не могу понять как ее назвать -->
+      <div class="contacts__wrapper">
       <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
       </p>
-      <div class="contacts__wrapper">
+      <div>
+      <div class="contacts__map">
 
       </div>
     </section>
