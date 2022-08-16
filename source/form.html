@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -38,9 +39,9 @@
 
   <main class="form-custom">
 
-    <header class="form-custom__header hero">
-      <h1 class="hero__title heading">Подбор программы</h1>
-      <p class="hero__text">Заполните анкету, и мы подберем
+    <header class="form-custom__header">
+      <h1 class="form-custom__title main-heading">Подбор программы</h1>
+      <p class="form-custom__text">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
     </header>
 
@@ -91,7 +92,7 @@
           </ul>
         </fieldset>
 
-        <h2 class="order-form__title">Контактные данные
+        <h2 class="order-form__title">Контактные данные <br>
           (владельца кота)</h2>
         <p class="order-form__group  field">
           <label class="field__label">E-mail:*
@@ -105,7 +106,8 @@
           </label>
         </p>
         <p class="order-form__group  field">
-          <label class="field__label">Комментарий
+          <label class="field__label">
+            <legend class="order-form__title">Комментарий</legend>
             <textarea class="field__input" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
@@ -155,14 +157,15 @@
       <h2 class="contacts__title">
         <span class="visually-hidden">контакты</span>
       </h2>
-      <!-- явно нужна обертка не могу понять как ее назвать -->
+      <div class="contacts__wrapper">
       <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
       </p>
-      <div class="contacts__wrapper">
+      <div>
+      <div class="contacts__map">
 
       </div>
     </section>

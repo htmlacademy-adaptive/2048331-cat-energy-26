@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
 
+  <header class="main-header">
     <a class="main-header__logo">
       <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
     </a>
@@ -41,7 +42,7 @@
     <!-- header -->
 
     <header class="main-content__header hero">
-      <h1 class="hero__title heading">Функциональное
+      <h1 class="hero__title main-heading">Функциональное
         питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <img src="img/index-can-mobile.png" alt="Фото банки корма.">
@@ -65,7 +66,7 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="button" href="#">каталог slim</a>
+            <a class="advantages__button button" href="#">каталог slim</a>
           </li>
 
           <li class="advantages__item advantages__item--pro">
@@ -76,7 +77,7 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="button" href="#">каталог pro</a>
+            <a class="advantages__button button" href="#">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -88,26 +89,30 @@
       <h2 class="how-it-works__title heading">Как это работает</h2>
       <ul class="how-it-works__list">
 
-        <li class="how-it-works__item">
+        <li class="how-it-works__item how-it-works__item">
+          <div class="how-it-works__icon how-it-works__icon--healthy"></div>
           <p class="how-it-works__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
 
         <li class="how-it-works__item">
-          <p class="how-it-works__description how-it-works__description--active">
+          <div class="how-it-works__icon how-it-works__icon--easy"></div>
+          <p class="how-it-works__description">
             Выпускается в виде порошка, который нужно лишь залить кипятком и
             готово.
           </p>
         </li>
 
         <li class="how-it-works__item">
+          <div class="how-it-works__icon how-it-works__icon--functional"></div>
           <p class="how-it-works__description">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
 
         <li class="how-it-works__item">
+          <div class="how-it-works__icon how-it-works__icon--fast"></div>
           <p class="how-it-works__description">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
@@ -128,16 +133,22 @@
         <dt class="live-example__details-value">60 ДНЕЙ</dt>
         <dd class="live-example__details-name">затрачено времени</dd>
       </dl>
-      <p class="live-example__text">Затраты на питание: 15 000 РУБ.</p>
+      <p class="live-example__sum">Затраты на питание: 15 000 РУБ.</p>
+      <div class="live-example__cat-wrapper">
       <img class="live-example__fat-cat" src="img/fat-cat-before.jpg" alt="Толстый котик.">
+      <img class="live-example__range-slider" src="img/slider.png" alt="#">
       <img class="live-example__thin-cat" src="img/thin-cat-after.jpg" alt="Худой котик.">
-
+    </div>
       <div class="live-example__control before-after">
-        <button class="before-after__button">Было</button>
+        <p class="before-after__button">
+          <span class="visually-hidden">Было</span>
+        </p>
         <div class="before-after__range">
           <div class="before-after__slider" tabindex="0"></div>
         </div>
-        <button class="before-after__button">Стало</button>
+        <p class="before-after__button">
+          <span class="visually-hidden">Стало</span>
+        </p>
       </div>
     </section>
 
@@ -147,14 +158,15 @@
       <h2 class="contacts__title">
         <span class="visually-hidden">контакты</span>
       </h2>
-      <!-- явно нужна обертка не могу понять как ее назвать -->
+      <div class="contacts__wrapper">
       <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
       </p>
-      <div class="contacts__wrapper">
+      <div>
+      <div class="contacts__map">
 
       </div>
     </section>
