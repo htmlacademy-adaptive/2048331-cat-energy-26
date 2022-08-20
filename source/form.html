@@ -9,14 +9,16 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
 
-    <a class="main-header__logo">
-      <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
-    </a>
-    <a class="main-header__logo-name">
-      <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
-    </a>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
+      </a>
+      <a class="main-header__logo-text"  href="index.html">
+        <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
+      </a>
+      </div>
 
     <nav class="main-navigation">
       <button class="navigation__toggle" type="button">
@@ -25,13 +27,13 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">главная</a>
+            <a class="main-navigation__link" href="index.html">главная</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">подбор программы</a>
+          <li class="main-navigation__item main-navigation__item--last">
+            <a class="main-navigation__link main-navigation__link--current" href="#">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -107,7 +109,7 @@
           </label>
         </p>
         <p class="order-form__group  field">
-          <label class="field__label">
+          <label class="field__label field__label--comment">
             <legend class="order-form__title">Комментарий</legend>
             <textarea class="field__input" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>

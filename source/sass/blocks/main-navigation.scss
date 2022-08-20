@@ -1,5 +1,29 @@
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+}
+
 .main-navigation__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-evenly;
+    width: 478px;
+  }
 }
 
 .main-navigation__link {

@@ -11,31 +11,31 @@
 <body class="page__body">
 
   <header class="main-header">
-    <a class="main-header__logo">
+    <div class="main-header__wrapper">
+    <a class="main-header__logo" href="#">
       <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
     </a>
-    <a class="main-header__logo-text">
+    <a class="main-header__logo-text"  href="#">
       <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
     </a>
+    </div>
 
     <nav class="main-navigation">
-      <button class="navigation__toggle" type="button">
+      <button class="main-navigation__toggle main-navigation__toggle--active" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">главная</a>
+            <a class="main-navigation__link main-navigation__link--light main-navigation__link--current" href="#">главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
+            <a class="main-navigation__link main-navigation__link--light" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">подбор программы</a>
+          <li class="main-navigation__item main-navigation__item--last">
+            <a class="main-navigation__link main-navigation__link--light" href="form.html">подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
   </header>
 
   <main class="main-content">
@@ -43,11 +43,13 @@
     <!-- header -->
 
     <header class="main-content__header hero">
-      <h1 class="hero__title main-heading">Функциональное
+      <div class="hero__wrapper">
+      <h1 class="hero__title main-heading">Функциональное <br>
         питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile.png" alt="Фото банки корма.">
+      <img class="hero__image" src="img/index-can-mobile.png" width="280" height="270" alt="Фото банки корма.">
       <a class="hero__button button" href="form.html">подобрать программу</a>
+    </div>
     </header>
 
     <!-- advantages -->
@@ -67,7 +69,7 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
               поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="advantages__button button" href="#">каталог slim</a>
+            <a class="advantages__button button" href="catalog.html">каталог slim</a>
           </li>
 
           <li class="advantages__item advantages__item--pro">
@@ -124,6 +126,7 @@
     <!-- live example -->
 
     <section class="live-example section">
+      <div class="live-example__wrapper">
       <h2 class="live-example__title heading">Живой пример</h2>
       <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
@@ -135,11 +138,11 @@
         <dd class="live-example__details-name">затрачено времени</dd>
       </dl>
       <p class="live-example__sum">Затраты на питание: 15 000 РУБ.</p>
+    </div>
       <div class="live-example__cat-wrapper">
       <img class="live-example__fat-cat" src="img/fat-cat-before.jpg" alt="Толстый котик.">
       <img class="live-example__range-slider" src="img/slider.png" alt="#">
       <img class="live-example__thin-cat" src="img/thin-cat-after.jpg" alt="Худой котик.">
-    </div>
       <div class="live-example__control before-after">
         <p class="before-after__button">
           <span class="visually-hidden">Было</span>
@@ -151,6 +154,8 @@
           <span class="visually-hidden">Стало</span>
         </p>
       </div>
+    </div>
+
     </section>
 
     <!-- contacts -->
@@ -180,6 +185,7 @@
       <a class="main-footer__logo">
         <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
       </a>
+    </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -198,9 +204,7 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-    </div>
+
   </footer>
-
 </body>
-
 </html>

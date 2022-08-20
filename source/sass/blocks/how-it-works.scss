@@ -1,13 +1,26 @@
 .how-it-works__list {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  width: calc(100% - 20px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 110px);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 106px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .how-it-works__item {
   display: flex;
   align-items: center;
   width: 278px;
-  margin: 20px 20px;
+  margin-bottom: 20px;
 }
 
 .how-it-works__icon {

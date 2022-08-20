@@ -9,14 +9,17 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
 
-    <a class="main-header__logo">
-      <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
-    </a>
-    <a class="main-header__logo-name">
-      <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
-    </a>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/cat-energy-logo-mobile.svg" width="32" height="70" alt="Лого Кэт Энерджи.">
+      </a>
+      <a class="main-header__logo-text"  href="index.html">
+        <img src="img/cat-energy-name-mobile.svg" width="101" height="18" alt="Название Кэт Энерджи.">
+      </a>
+      </div>
+
 
     <nav class="main-navigation">
       <button class="navigation__toggle" type="button">
@@ -25,12 +28,12 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">главная</a>
+            <a class="main-navigation__link" href="index.html">главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
+            <a class=" main-navigation__link main-navigation__link--current" href="#">каталог продукции</a>
           </li>
-          <li class="main-navigation__item">
+          <li class="main-navigation__item main-navigation__item--last">
             <a class="main-navigation__link" href="form.html">подбор программы</a>
           </li>
         </ul>
@@ -162,41 +165,42 @@
           </dl>
           <a class="card__button button" href="#">заказать</a>
         </li>
+        <li class="catalog__item show-more">
+          <b class="show-more__title">Показать еще 100500 товаров</b>
+      <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+      <button class="show-more__submit button" type="submit">показать все</button>
+        </li>
       </ul>
     </section>
 
-    <div class="show-more">
-      <b class="show-more__title">Показать еще 100500 товаров</b>
-      <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-      <button class="show-more__submit button" type="submit">показать все</button>
-    </div>
-
     <section class="add-goods">
     <h2 class="add-goods__title">Дополнительные товары</h2>
+    <div class="add-goods__wrapper">
     <b class="add-goods__name">Сахарозаменитель</b>
-    <dl class="add-goods__add">
-      <dt class="add-goods__details-name">1 упаковка (100 г)</dt>
-      <dd class="add-goods__details-value">200 Р.</dd>
+    <dl class="add-goods__list">
+      <dt class="add-goods__type">1 упаковка (100 г)</dt>
+      <dd class="add-goods__price">200 Р.</dd>
     </dl>
     <a class="add-goods__button button" href="#">заказать</a>
     <b class="add-goods__name">питьевая вода</b>
-    <dl class="add-goods__add">
-      <dt class="add-goods__details-name">5 литров</dt>
-      <dd class="add-goods__details-value">50 Р.</dd>
+    <dl class="add-goods__list">
+      <dt class="add-goods__type">5 литров</dt>
+      <dd class="add-goods__price">50 Р.</dd>
     </dl>
     <a class="add-goods__button button" href="#">заказать</a>
     <b class="add-goods__name">молоко</b>
-    <dl class="add-goods__add">
-      <dt class="add-goods__details-name">1 литр</dt>
-      <dd class="add-goods__details-value">100 Р.</dd>
+    <dl class="add-goods__list">
+      <dt class="add-goods__type">1 литр</dt>
+      <dd class="add-goods__price">100 Р.</dd>
     </dl>
     <a class="add-goods__button button" href="#">заказать</a>
     <b class="add-goods__name">витамины</b>
-    <dl class="add-goods__add">
-      <dt class="add-goods__details-name">1 упаковка (30 г)</dt>
-      <dd class="add-goods__details-value">300 Р.</dd>
+    <dl class="add-goods__list">
+      <dt class="add-goods__type">1 упаковка (30 г)</dt>
+      <dd class="add-goods__price">300 Р.</dd>
     </dl>
     <a class="add-goods__button button" href="#">заказать</a>
+    </div>
   </section>
 
     <div class="gift">

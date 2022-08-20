@@ -1,11 +1,25 @@
-.add-goods {
-  padding-left: 20px;
-  margin-top: 50px;
-}
+
 
 .add-goods__name {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.add-goods__list {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

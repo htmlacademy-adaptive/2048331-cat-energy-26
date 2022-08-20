@@ -1,39 +1,123 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  max-width: 1440px;
+}
+
+.hero__wrapper {
+  padding-top: 27px;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 810px;
+    padding-left: 119px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+    padding-left: 190px;
+    margin-bottom: 82px;
+  }
 
   &::before {
     position: absolute;
-    display: block;
     content: "";
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-image:
       linear-gradient(rgba($basic-green, 0.85),
       rgba($basic-green, 0.85)),
       url("../img/cat-index-background-mobile.jpg");
-    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image:
+        linear-gradient(rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)),
+        url("../img/cat-index-background-desktop.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
-
 
 .hero__title {
   margin: 0;
-  padding-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__text {
-  &--main-page {
-    color: #ffffff;
-    line-height: 14px;
-  }
-  width: 226px;
+  line-height: 14px;
   font-size: 14px;
-  line-height: 18px;
+  margin: 0;
   text-transform: uppercase;
   margin-bottom: 29px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 49px;
+  }
+}
+
+.hero__image {
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    width: 708px;
+    height: auto;
+    z-index: -1;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    left: 400px;
+    top: 90px;
+    z-index: 1;
+  }
+}
+
+.hero__button {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+    width: 244px;
+  }
 }
