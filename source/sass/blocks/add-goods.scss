@@ -1,6 +1,35 @@
+.add-goods__box {
+  width: 65%;
+}
 
+.add-goods__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "name type price btn"
+      "name type price btn"
+      "name type price btn"
+      "name type price btn";
+    width: 100%;
+    min-height: 288px;
+    align-items: center;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 2fr 1fr 1fr 244px;
+  }
+}
 
 .add-goods__name {
+  grid-area: name;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -12,7 +41,25 @@
   }
 }
 
-.add-goods__list {
+.add-goods__type {
+  grid-area: type;
+}
+
+.add-goods__price {
+  grid-area: price;
+}
+
+.add-goods__button {
+  grid-area: btn;
+}
+
+.add-goods__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.add-goods__details {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,4 +69,16 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
+}
+
+.add-goods__type {
+  grid-area: type;
+}
+
+.add-goods__price {
+  grid-area: price;
+}
+
+.add-goods__button {
+  grid-area: btn;
 }
