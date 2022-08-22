@@ -1,11 +1,4 @@
-.catalog__title {
-  padding-left: 20px;
-}
-
-.catalog__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.additionally__list {
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +11,11 @@
   }
 }
 
-.catalog__item {
-  padding: 20px;
-  margin-bottom: 20px;
+.additionally__submit {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

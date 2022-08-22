@@ -1,5 +1,13 @@
 .live-example {
   background: #eaeaea;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .live-example__title {
