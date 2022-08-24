@@ -1,13 +1,84 @@
-@media (min-width: $tablet-width) {
-  .main-navigation {
+
+.main-navigation {
+  position: relative;
+  width: auto;
+  min-height: 66px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin: 0 auto;
   }
+}
 
-  .main-navigation__toggle {
+.main-navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    color: opacify(#000000, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+  content: "";
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 30px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/burger-menu-toggle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:active {
+    color: opacify(#000000, 0.3);
+  }
+}
+
+
+.main-navigation--opened .main-navigation__toggle {
+  top: 0;
+  right: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 25px;
+    height: 2px;
+    background-color: #111111;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: transparentize(#000000, 0.3);
   }
 }
 
