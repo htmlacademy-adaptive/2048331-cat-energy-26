@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $basic-grey;
+  padding: 39px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -13,5 +15,7 @@
 //почему текст и link не разбежались по углам? Им нужны обертки для этого?
 .main-footer__copyright {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }

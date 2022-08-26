@@ -11,14 +11,18 @@
 }
 
 .live-example__title {
-  margin-left: 20px;
+  margin: 0;
   margin-bottom: 40px;
+  padding-left: 20px;
   padding-top: 66px;
 }
 
 .live-example__text {
-  width: 280px;
-  margin: 20px 20px;
+  width: auto;
+}
+
+.live-example__list {
+  margin: 0;
 }
 
 .live-example__details-value {
