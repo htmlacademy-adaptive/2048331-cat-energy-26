@@ -1,10 +1,25 @@
+.field {
+
+
+}
+
 .field__input {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
   width: 100%;
+  height: 52px;
+  margin-bottom: 20px;
   border: 1px solid #e7e7e7;
+
+  &:focus {
+    border-color: $special-dark-grey;
+
+    &:not(:focus-visible) {
+      outline: 0;
+    }
+  }
 }
 
 .field__label {
@@ -13,5 +28,55 @@
   &--comment {
     display: flex;
     flex-direction: column;
+  }
+
+  &--email {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 16px;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 18px;
+      height: 10px;
+      background-image: url(../img/icon_email.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+
+  &--mob {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 16px;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/mob-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+
+  .field__label--email::before:focus,
+  .field__label--mob::before:focus {
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 92%;
+    max-width: 568px;
   }
 }

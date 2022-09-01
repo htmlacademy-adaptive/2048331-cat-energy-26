@@ -13,6 +13,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 65px;
+  padding: 10px 20px 17px 20px;
+  box-sizing: border-box;
 }
 
 .main-header__logo {
@@ -62,11 +64,6 @@
     width: 24px;
     height: 2px;
     background-color: #000000;
-
-    &:active,
-    &:hover {
-      transform: rotate(45deg);
-    }
   }
 
   &::after {
@@ -77,9 +74,21 @@
     width: 24px;
     height: 2px;
     background-color: #000000;
+  }
 
-    &:active,
-    &:hover {
+  &--active,
+  &:active {
+    &::before {
+      top: 18px;
+      transform: rotate(45deg);
+    }
+
+    .main-header__toggle-center {
+      display: none;
+    }
+
+    &::after {
+      top: 18px;
       transform: rotate(-45deg);
     }
   }
@@ -96,11 +105,6 @@
   width: 24px;
   height: 2px;
   background-color: #000000;
-
-  &:active,
-  &:hover {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: none;

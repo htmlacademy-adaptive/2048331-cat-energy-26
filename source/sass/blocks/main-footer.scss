@@ -12,10 +12,19 @@
   }
 }
 
-//почему текст и link не разбежались по углам? Им нужны обертки для этого?
-.main-footer__copyright {
+.main-footer__logo {
+  box-sizing: border-box;
+  width: 281px;
+  padding-top: 22px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.main-footer__logo-link {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
+}
+// почему картинка не оттолкнулась от букв? Пришлось выше задаать флекс, а хотела просто марджином обойтись
+.main-footer__logo-pic {
+  margin-left: auto;
+  fill: #666666;
 }

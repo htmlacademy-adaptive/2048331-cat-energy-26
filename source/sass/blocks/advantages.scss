@@ -66,4 +66,9 @@
   width: 227px;
   min-height: 90px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

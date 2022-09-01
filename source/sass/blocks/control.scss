@@ -1,0 +1,60 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 60px;
+  //font-weight: 400;
+  //font-size: 20px;
+  //line-height: 30px;
+}
+
+.control__icon {
+  position: absolute;
+  left: 1px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control__label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.control__input[type="checkbox"]:checked + .control__icon {
+  background-image: url("/img/check.svg");
+}
+
+.control__input[type="radio"] + .control__icon {
+  border-radius: 50%;
+  background-image: none;
+}
+
+//радиобаттон не работает, не нахожу почему
+.control__input[type="radio"]:checked + .control__icon::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+}
