@@ -1,8 +1,3 @@
-.field {
-
-
-}
-
 .field__input {
   text-transform: uppercase;
   font-size: 16px;
@@ -43,7 +38,7 @@
       margin-bottom: auto;
       width: 18px;
       height: 10px;
-      background-image: url(../img/icon_email.svg);
+      background-image: url("../img/icon_email.svg");
       background-repeat: no-repeat;
       background-position: center;
       cursor: pointer;
@@ -63,7 +58,7 @@
       margin-bottom: auto;
       width: 20px;
       height: 20px;
-      background-image: url(../img/mob-icon.svg);
+      background-image: url("../img/mob-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       cursor: pointer;

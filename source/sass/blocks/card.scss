@@ -20,8 +20,6 @@
     background-image: linear-gradient(#ffffff, #ffffff 15%, #eaeaea 15%, #eaeaea,);
   }
 
-// почему не получился крестик для последней карточки - не отображается в девтулс бефо и афтэ?
-
   &--last {
     position: relative;
     border: 2px solid $basic-grey;
