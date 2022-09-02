@@ -8,23 +8,34 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__social {
+  margin-top: 32px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
 .main-footer__logo {
   box-sizing: border-box;
-  width: 281px;
-  padding-top: 22px;
-  border-top: 1px solid #d9d9d9;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+  }
 }
 
 .main-footer__logo-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-// почему картинка не оттолкнулась от букв? Пришлось выше задаать флекс, а хотела просто марджином обойтись
+
 .main-footer__logo-pic {
-  margin-left: auto;
   fill: #666666;
 }

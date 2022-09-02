@@ -3,6 +3,7 @@
   background: #eaeaea;
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(#ffffff, #ffffff 66%, #eaeaea 66%, #eaeaea,);
@@ -17,7 +18,6 @@
 .live-example__title {
   margin: 0;
   margin-bottom: 40px;
-  padding-top: 25px;
 }
 
 .live-example__text {
@@ -43,19 +43,24 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .live-example__list {
+  display: flex;
   min-width: 280px;
+  margin-left: 30px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     max-width: 366px;
     margin: 0;
     padding: 0;
   }
-
 }
 
 .live-example__kg-time {
@@ -63,15 +68,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 162px;
-  height: 72px;
+  width: 124px;
+  height: 70px;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  margin-right: 42px;
+  margin-right: 32px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 77px;
+    margin-right: 42px;
   }
 }
 
@@ -124,13 +130,13 @@
 }
 
 .live-example__content {
-  width: 49%;
-  max-width: 436px;
+  width: 100%;
 }
 
 .live-example__cat-wrapper {
-  width: 49%;
-  max-width: 560px;
+  width: 100%;
+  //width: 49%;
+  //max-width: 560px;
 }
 
 .live-example__cat-img {

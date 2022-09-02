@@ -43,15 +43,19 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 450px;
+    //flex-wrap: wrap;
+    //justify-content: space-around;
+    //width: 450px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-evenly;
-    width: 490px;
+    //justify-content: space-evenly;
+    //width: 490px;
   }
+}
+
+.main-navigation__item {
+  margin-left: 35px;
 }
 
 .main-navigation__link {
@@ -84,6 +88,7 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    border: none;
 
     &:hover {
       opacity: 0.6;
@@ -102,6 +107,10 @@
     &--active::after {
       background: #ffffff;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    color:#ffffff;
   }
 }
 
