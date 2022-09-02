@@ -12,6 +12,6 @@ mainToggle.addEventListener('click', function () {
   } else {
     navMain.classList.add('main-navigation--closed');
     navMain.classList.remove('main-navigation--opened');
-   }
+    }
   mainToggle.classList.toggle('main-header__toggle--active');
   });
