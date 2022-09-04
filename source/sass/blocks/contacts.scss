@@ -14,20 +14,20 @@
   height: 400px;
 }
 
-.contacts--light {
-  background-color: transparent;
-}
-
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
+
+  &--light {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -36,8 +36,8 @@
     left: 50px;
     width: 565px;
     height: 198px;
-    background-color: #ffffff;
     padding: 0;
+    background-color: #ffffff;
   }
 }
 

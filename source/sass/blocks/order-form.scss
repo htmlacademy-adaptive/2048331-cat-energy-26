@@ -18,19 +18,37 @@
 
 .order-form__cat {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 67px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-left: 111px;
+    padding-right: 112px;
   }
 }
 
 .order-form__owner {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 65px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-left: 111px;
+    padding-right: 110px;
   }
 }
 
@@ -41,6 +59,12 @@
   font-weight: 400;
   margin-bottom: 35px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .order-form__radio {

@@ -19,12 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -30px;
-    width: calc(100% - 60px);
+    width: calc(100% + 60px);
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 -40px;
-    width: calc(100% - 80px);
+    width: calc(100% + 80px);
   }
 }
 

@@ -1,0 +1,42 @@
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
+.line__container {
+  max-width: 630px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+  }
+}
+
+.line__title {
+  padding: 0 20px;
+  background-color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 36px;
+    margin-left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    margin-left: -40px;
+  }
+}

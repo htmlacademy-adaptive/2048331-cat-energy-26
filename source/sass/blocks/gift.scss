@@ -13,7 +13,8 @@
   background-position: center;
 
   @media (min-width: $desktop-width) {
-    margin: 35px 0 35px 70px;
+    margin: 35px 0 35px 20px;
+    min-width: 245px;
     width: 245px;
     flex: none;
   }

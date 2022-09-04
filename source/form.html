@@ -22,7 +22,7 @@
       <span class="main-header__toggle-center"></span>
     </button>
   </div>
-    <nav class="main-navigation">
+  <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -42,13 +42,13 @@
 
   <main class="form-custom">
 
-    <header class="form-custom__header">
+    <header class="form-custom__header section">
       <h1 class="form-custom__title main-heading">Подбор программы</h1>
-      <p class="form-custom__text">Заполните анкету, и мы подберем
+      <p class="form-custom__text">Заполните анкету, и мы подберем <br>
         программу питания для вашего кота</p>
     </header>
 
-    <section class="form-custom__order">
+      <section class="form-custom__order">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form-custom__form order-form" action="https://echo.htmlacademy.ru" method="post">
 <div class="order-form__cat">
@@ -95,8 +95,14 @@
           </ul>
         </fieldset>
       </div>
-        <h2 class="order-form__title">Контактные данные <br>
-          (владельца кота)</h2>
+
+      <section class="line">
+        <div class="line__container">
+          <h2 class="line__title">Контактные данные <br>
+            (владельца кота)</h2>
+        </div>
+      </section>
+
           <div class="order-form__owner">
         <p class="order-form__group  field">
           <label class="field__label field__label--email">E-mail:*
@@ -110,18 +116,30 @@
           </label>
         </p>
       </div>
+
+      <section class="line">
+        <div class="line__container">
+          <h2 class="line__title">Комментарий</h2>
+        </div>
+      </section>
+
         <p class="order-form__group  field">
           <label class="field__label field__label--comment">
-            <legend class="order-form__title">Комментарий</legend>
-            <textarea class="field__input" rows="5" name="user-message"
+
+            <textarea class="field__input field__input--comment" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </p>
+    <section class="line">
+      <div class="line__container">
+        <h2 class="line__title">Дополнительно</h2>
+      </div>
+    </section>
 
         <fieldset class="order-form__group">
-                    <legend class="order-form__title">Дополнительно</legend>
-                    <div class="additionally">
-                    <ul class="order-form__list order-form__checkbox additionally__list">
+
+       <div class="additionally">
+          <ul class="order-form__list order-form__checkbox additionally__list">
             <li class="order-form__item additionally__item">
               <label class="control control--checkbox">
                 <input class="visually-hidden control__input" type="checkbox" checked>
@@ -151,12 +169,12 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <div class="additionally__submit">
-        <button class="order-form__submit button" type="submit">отправить заявку</button>
-        <span class="order-form__note"><sup>*</sup> — Обязательные поля</span>
-      </div>
-      </div>
+         </fieldset>
+         <div class="additionally__submit">
+         <button class="order-form__submit button" type="submit">отправить заявку</button>
+         <span class="order-form__note"><sup>*</sup> — Обязательные поля</span>
+         </div>
+        </div>
       </form>
     </section>
 

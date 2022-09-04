@@ -1,3 +1,17 @@
+.additionally {
+  padding: 34px 20px 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+    padding-bottom: 54px;
+  }
+}
+
 .additionally__list {
   width: 100%;
 
