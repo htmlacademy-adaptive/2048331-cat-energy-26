@@ -53,7 +53,6 @@
 .live-example__list {
   display: flex;
   min-width: 280px;
-  margin-left: 30px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -72,12 +71,18 @@
   height: 70px;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  margin-right: 32px;
+
+  &--left {
+    margin-right: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 42px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 77px;
-    margin-right: 42px;
   }
 }
 
@@ -124,6 +129,12 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     text-align: right;
   }
@@ -155,3 +166,4 @@
   position: relative;
   width: 40px;
 }
+

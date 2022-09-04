@@ -1,10 +1,12 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 19px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 40px;
     width: 324px;
@@ -15,33 +17,75 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 511px;
-    margin: 30px;
-    background-image: linear-gradient(#ffffff, #ffffff 15%, #eaeaea 15%, #eaeaea,);
+    margin: 40px;
   }
 
   &--last {
     position: relative;
-    border: 2px solid $basic-grey;
+    background-image: none;
 
     &::before {
+      content: "";
       position: absolute;
-      width: 60px;
+      width: 30px;
       height: 2px;
-      left: 122px;
-      top: 51px;
+      left: calc(50% - 15px);
+      top: 45px;
       background-color: #d3d3d3;
     }
 
     &::after {
+      content: "";
       position: absolute;
-      width: 60px;
+      width: 30px;
       height: 2px;
-      left: 122px;
-      top: 51px;
+      left: calc(50% - 15px);
+      top: 45px;
       background-color: #d3d3d3;
       transform: rotate(90deg);
     }
+
+    @media (min-width: $tablet-width) {
+      border: 2px solid $basic-grey;
+      height: 429px;
+      margin-top: 112px;
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        left: 122px;
+        top: 51px;
+      }
+
+      &::after {
+        width: 60px;
+        height: 2px;
+        left: 122px;
+        top: 51px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 431px;
+      margin-top: 114px;
+
+      &::before {
+        left: 92px;
+      }
+
+      &::after {
+        left: 92px;
+      }
+    }
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -56,6 +100,27 @@
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+  }
+
+  &--last {
+    padding-top: 78px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 161px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 160px;
+    }
+  }
 }
 
 .card__description {
