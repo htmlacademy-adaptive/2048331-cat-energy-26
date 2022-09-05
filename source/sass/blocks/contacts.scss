@@ -45,10 +45,12 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 139px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 172px;
   }
 }
 
@@ -58,10 +60,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
 
   @media (max-width: $mobile-width-only) {
-    width: 159px;
-
     br {
       display: none;
     }
@@ -69,5 +70,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    width: 160px;
   }
 }

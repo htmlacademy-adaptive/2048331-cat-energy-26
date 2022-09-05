@@ -96,12 +96,12 @@
         </fieldset>
       </div>
 
-      <section class="line">
+      <div class="line">
         <div class="line__container">
           <h2 class="line__title">Контактные данные <br>
             (владельца кота)</h2>
         </div>
-      </section>
+      </div>
 
           <div class="order-form__owner">
         <p class="order-form__group  field">
@@ -117,24 +117,24 @@
         </p>
       </div>
 
-      <section class="line">
+      <div class="line">
         <div class="line__container">
           <h2 class="line__title">Комментарий</h2>
         </div>
-      </section>
+      </div>
 
-        <p class="order-form__group  field">
+        <p class="order-form__group order-form__group--comment field">
           <label class="field__label field__label--comment">
 
             <textarea class="field__input field__input--comment" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </p>
-    <section class="line">
+    <div class="line">
       <div class="line__container">
         <h2 class="line__title">Дополнительно</h2>
       </div>
-    </section>
+    </div>
 
         <fieldset class="order-form__group">
 
@@ -169,11 +169,12 @@
               </label>
             </li>
           </ul>
+          <div class="additionally__submit">
+            <button class="button" type="submit">отправить заявку</button>
+            <span class="order-form__note"><sup>*</sup> — Обязательные поля</span>
+            </div>
          </fieldset>
-         <div class="additionally__submit">
-         <button class="order-form__submit button" type="submit">отправить заявку</button>
-         <span class="order-form__note"><sup>*</sup> — Обязательные поля</span>
-         </div>
+
         </div>
       </form>
     </section>
@@ -185,8 +186,10 @@
         <span>контакты</span>
       </h2>
       <div class="contacts__wrapper">
-      <b class="contacts__invite">приглашаем <br>к сотрудничеству <br> дилеров!</b>
-      <p class="contacts__text">
+        <p class="contacts__invite">
+      <b> приглашаем <br>к сотрудничеству <br> дилеров!</b>
+    </p>
+           <p class="contacts__text">
         ул. Большая<br>
         Конюшенная, д. 19/8<br><br>
         Санкт-Петербург
