@@ -17,10 +17,6 @@
 
     @media (min-width: $tablet-width) {
       min-height: 174px;
-        }
-
-    @media (min-width: $desktop-width) {
-      min-height: 174px;
     }
   }
 
@@ -47,24 +43,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &--comment {
-    display: flex;
-    flex-direction: column;
-    min-height: 150px;
-
-    //@media (min-width: $tablet-width) {
-    //  padding-left: 70px;
-    //  padding-right: 67px;
-    //  min-height: 174px;
-    //}
-
-    //@media (min-width: $desktop-width) {
-    //  padding-left: 110px;
-    //  padding-right: 110px;
-    //  min-height: 174px;
-    //}
   }
 
   &--email {

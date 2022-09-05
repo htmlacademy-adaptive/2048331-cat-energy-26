@@ -9,6 +9,7 @@
 }
 
 .order-form__group {
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 14px;
   padding: 0;
@@ -19,23 +20,6 @@
   color: $special-dark-grey;
   border: none;
   width: 100%;
-
-  &--comment {
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media (min-width: $tablet-width) {
-      padding-left: 70px;
-      padding-right: 67px;
-
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 110px;
-      padding-right: 110px;
-
-    }
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -60,6 +44,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 111px;
     padding-right: 112px;
   }
@@ -70,14 +55,28 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 71px;
-    padding-right: 65px;
+    padding: 56px 65px 45px 71px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     padding-left: 111px;
+    padding-right: 110px;
+  }
+}
+
+.order-form__comment {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
     padding-right: 110px;
   }
 }
@@ -137,5 +136,10 @@
 }
 
 .order-form__note {
-  text-align: center;
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin: 0;
+  }
 }
