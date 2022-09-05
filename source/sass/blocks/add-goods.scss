@@ -1,10 +1,9 @@
 .add-goods__box {
-  padding: 20px;
   display: flex;
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    padding: 30px;
+    max-width: 896px;
   }
 }
 
@@ -12,8 +11,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -43,6 +41,10 @@
   padding-bottom: 19px;
   border-bottom: 1px solid $special-grey;
 
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     width: 100%;
@@ -53,6 +55,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

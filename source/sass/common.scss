@@ -18,6 +18,8 @@
 }
 
 .main-heading {
+  padding: 0;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -29,29 +31,56 @@
 }
 
 .button {
-  display: block;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 280px;
   min-height: 40px;
   background-color: $basic-green;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 7px 40px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  border: none;
 }
 
 .section {
   display: block;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.tab-br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.mob-br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
