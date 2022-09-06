@@ -70,7 +70,7 @@
   line-height: 20px;
   width: 100%;
   min-height: 66px;
-  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
   text-decoration: none;
   color: #000000;
   font-style: normal;
@@ -87,18 +87,10 @@
       left: 0;
       height: 2px;
       width: 100%;
-    }
-  }
 
-  @media (min-width: $mobile-width-only) {
-    &--current::after {
-      background: #ffffff;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &--current::after {
-      background: $basic-green;
+      @media (min-width: $tablet-width) {
+        background: $basic-green;
+      }
     }
   }
 
@@ -113,21 +105,15 @@
     &:focus {
       opacity: 0.3;
     }
-
-    &--current::after {
-      background: $basic-green;
-    }
-  }
-
-  @media (min-width: $mobile-width-only) {
-    &--current::after {
-      background: #ffffff;
-    }
   }
 
   @media (min-width: $desktop-width) {
     &--light {
       color: #ffffff;
+
+      &--current::after {
+        background: #ffffff;
+      }
     }
   }
 }
