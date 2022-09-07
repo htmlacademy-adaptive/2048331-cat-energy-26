@@ -13,7 +13,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
     <a class="main-header__logo" href="#">
-      <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
+        <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+    </picture>
     </a>
     <a class="main-header__logo-text"  href="#">
       <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
@@ -141,11 +145,23 @@
       <p class="live-example__sum">Затраты на питание: <br> 15 000 РУБ.</p>
     </div>
   </div>
-      <div class="live-example__cat-wrapper">
-        <div class="live-example__cat-img">
-      <img class="live-example__fat-cat" src="img/fat-cat-before.jpg" alt="Толстый котик.">
-      <img class="live-example__range-slider" src="img/slider.png" alt="#">
-      <img class="live-example__thin-cat" src="img/thin-cat-after.jpg" alt="Худой котик.">
+  <div class="live-example__cat-wrapper">
+    <div class="live-example__cat-img">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x">
+      <img class="live-example__fat-cat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile.png 1x, img/fat-cat-mobile@2x.png 2x"
+      width="140" height="256" alt="Толстый котик.">
+    </picture>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/slider-tablet.svg 1x, img/slider-tablet@2x.svg 2x">
+      <img class="live-example__range-slider" src="img/slider-mobile.svg" srcset="img/slider-mobile.svg 1x, img/slider-mobile@2x.svg 2x" width="4"
+      height="256" alt="#">
+    </picture>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.png 1x, img/thin-cat-tablet@2x.png 2x">
+      <img class="live-example__thin-cat" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile.png 1x, img/thin-cat-mobile@2x.png 2x"
+      width="140" height="256" alt="Худой котик.">
+    </picture>
     </div>
       <div class="live-example__control before-after">
         <p class="before-after__button">

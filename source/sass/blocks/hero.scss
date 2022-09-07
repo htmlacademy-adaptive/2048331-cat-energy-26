@@ -38,6 +38,13 @@
     background-size: cover;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)),
+        url("../img/cat-index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -58,7 +65,15 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      background-color: $basic-green;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(rgba($basic-green, 0.85),
+          rgba($basic-green, 0.85)),
+          url("../img/cat-index-background-desktop@2x.jpg");
+      }
     }
   }
 }
