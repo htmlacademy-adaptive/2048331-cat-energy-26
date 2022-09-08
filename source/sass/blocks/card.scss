@@ -95,6 +95,18 @@
   }
 }
 
+.card__wrapper img {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
 .card__desc-wrapper {
   width: 142px;
 }

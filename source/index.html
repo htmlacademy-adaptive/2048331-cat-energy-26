@@ -6,6 +6,10 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,7 +17,11 @@
   <header class="main-header">
     <div class="main-header__wrapper">
     <a class="main-header__logo" href="#">
-      <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
+        <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+    </picture>
     </a>
     <a class="main-header__logo-text"  href="#">
       <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
@@ -47,7 +55,12 @@
       <h1 class="hero__title main-heading">Функциональное <br>
         питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="img/index-can-mobile.png" width="280" height="270" alt="Фото банки корма.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+        <img class="hero__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x"
+        width="280" height="270" alt="Фото банки корма.">
+      </picture>
       <a class="hero__button button" href="form.html">подобрать программу</a>
     </div>
     </header>
@@ -141,11 +154,23 @@
       <p class="live-example__sum">Затраты на питание: <br> 15 000 РУБ.</p>
     </div>
   </div>
-      <div class="live-example__cat-wrapper">
-        <div class="live-example__cat-img">
-      <img class="live-example__fat-cat" src="img/fat-cat-before.jpg" alt="Толстый котик.">
-      <img class="live-example__range-slider" src="img/slider.png" alt="#">
-      <img class="live-example__thin-cat" src="img/thin-cat-after.jpg" alt="Худой котик.">
+  <div class="live-example__cat-wrapper">
+    <div class="live-example__cat-img">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x">
+      <img class="live-example__fat-cat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile.png 1x, img/fat-cat-mobile@2x.png 2x"
+      width="140" height="256" alt="Толстый котик.">
+    </picture>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/slider-tablet.svg 1x, img/slider-tablet@2x.svg 2x">
+      <img class="live-example__range-slider" src="img/slider-mobile.svg" srcset="img/slider-mobile.svg 1x, img/slider-mobile@2x.svg 2x" width="4"
+      height="256" alt="#">
+    </picture>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.png 1x, img/thin-cat-tablet@2x.png 2x">
+      <img class="live-example__thin-cat" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile.png 1x, img/thin-cat-mobile@2x.png 2x"
+      width="140" height="256" alt="Худой котик.">
+    </picture>
     </div>
       <div class="live-example__control before-after">
         <p class="before-after__button">

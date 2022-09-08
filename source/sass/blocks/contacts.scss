@@ -31,12 +31,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 56px 80px;
     position: absolute;
     top: 50px;
     left: 50px;
     width: 565px;
     height: 198px;
-    padding: 0;
     background-color: #ffffff;
   }
 }
