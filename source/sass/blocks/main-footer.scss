@@ -12,6 +12,16 @@
   }
 }
 
+.main-footer__cat-logo > img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-footer__social {
   margin-top: 32px;
   margin-bottom: 22px;
@@ -36,6 +46,21 @@
   align-items: center;
 }
 
+.main-footer__logo-text {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-footer__logo-pic {
   fill: #666666;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
 }

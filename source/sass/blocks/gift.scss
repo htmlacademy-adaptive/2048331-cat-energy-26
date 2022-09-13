@@ -6,11 +6,14 @@
   width: 100%;
   height: 290px;
   background-image:
+    url("../img/icon_gift.svg"),
     linear-gradient(rgba($basic-green, 0.85),
     rgba($basic-green, 0.85)),
     url("../img/cat-catalog-background-mobile.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat, repeat, no-repeat;
+  //background-position-y: 20px;
 
   @media (min-resolution: 2dppx) {
     background-image:
