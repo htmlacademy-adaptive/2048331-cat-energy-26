@@ -12,9 +12,13 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
-    </a>
+      <a class="main-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
+          <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+      </picture>
+      </a>
     <a class="main-header__logo-text"  href="index.html">
       <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
     </a>
