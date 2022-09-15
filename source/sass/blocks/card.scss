@@ -164,9 +164,30 @@
     height: 40px;
   }
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--last {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     background-color: $basic-grey;
     color: $special-dark-grey;
     border: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba(#444444, 0.3);
+    }
   }
 }
