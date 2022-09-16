@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
@@ -56,9 +62,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/chicken-500g-desktop.webp 1x, img/chicken-500g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/chicken-500g-desktop.png 1x, img/chicken-500g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-500g-tablet.webp 1x, img/chicken-500g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/chicken-500g-tablet.png 1x, img/chicken-500g-tablet@2x.png 2x">
-          <img class="card__image" src="img/chicken-500g-mobile.png" srcset="img/chicken-500g-mobile@2x.png 2x"width="140" height="112"
+              <source srcset="img/chicken-500g-mobile.webp 1x, img/chicken-500g-mobile@2x.webp 2x" type="image/webp">
+          <img class="card__image" src="img/chicken-500g-mobile.png" srcset="img/chicken-500g-mobile.png 1x, img/chicken-500g-mobile@2x.png 2x" width="140" height="112"
             alt="корм курица 500 грамм.">
           </picture>
             <div class="card__desc-wrapper">
@@ -87,9 +96,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/chicken-1000g-desktop.webp 1x, img/chicken-1000g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/chicken-1000g-desktop.png 1x, img/chicken-1000g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-1000g-tablet.webp 1x, img/chicken-1000g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/chicken-1000g-tablet.png 1x, img/chicken-1000g-tablet@2x.png 2x">
-              <img class="card__image" src="img/chicken-1000g-mobile.png" srcset="img/chicken-1000g-mobile@2x.png 2x"width="140" height="112"
+              <source srcset="img/chicken-1000g-mobile.webp 1x, img/chicken-1000g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/chicken-1000g-mobile.png" srcset="img/chicken-1000g-mobile.png 1x, img/chicken-1000g-mobile@2x.png 2x" width="140" height="112"
               alt="корм курица 1000 грамм.">
             </picture>
             <div class="card__desc-wrapper">
@@ -118,9 +130,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/fish-500g-desktop.webp 1x, img/fish-500g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/fish-500g-desktop.png 1x, img/fish-500g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-500g-tablet.webp 1x, img/fish-500g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/fish-500g-tablet.png 1x, img/fish-500g-tablet@2x.png 2x">
-              <img class="card__image" src="img/fish-500g-mobile.png" srcset="img/fish-500g-mobile@2x.png 2x"width="140" height="112"
+              <source srcset="img/fish-500g-mobile.webp 1x, img/fish-500g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/fish-500g-mobile.png" srcset="img/fish-500g-mobile.png 1x, img/fish-500g-mobile@2x.png 2x" width="140" height="112"
               alt="корм рыба 500 грамм.">
             </picture>
           <div class="card__desc-wrapper">
@@ -149,9 +164,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/fish-1000g-desktop.webp 1x, img/fish-1000g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/fish-1000g-desktop.png 1x, img/fish-1000g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-1000g-tablet.webp 1x, img/fish-1000g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/fish-1000g-tablet.png 1x, img/fish-1000g-tablet@2x.png 2x">
-              <img class="card__image" src="img/fish-1000g-mobile.png" srcset="img/fish-1000g-mobile@2x.png 2x"width="140" height="112"
+              <source  srcset="img/fish-1000g-mobile.webp 1x, img/fish-1000g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/fish-1000g-mobile.png" srcset="img/fish-1000g-mobile.png 1x, img/fish-1000g-mobile@2x.png 2x" width="140" height="112"
               alt="корм рыба 1000 грамм.">
             </picture>
             <div class="card__desc-wrapper">
@@ -180,9 +198,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/buckwheat-500g-desktop.webp 1x, img/buckwheat-500g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/buckwheat-500g-desktop.png 1x, img/buckwheat-500g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-500g-tablet.webp 1x, img/buckwheat-500g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/buckwheat-500g-tablet.png 1x, img/buckwheat-500g-tablet@2x.png 2x">
-              <img class="card__image" src="img/buckwheat-500g-mobile.png" srcset="img/buckwheat-500g-mobile@2x.png 2x" width="140" height="112"
+              <source srcset="img/buckwheat-500g-mobile.webp 1x, img/buckwheat-500g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/buckwheat-500g-mobile.png" srcset="img/buckwheat-500g-mobile.png 1x, img/buckwheat-500g-mobile@2x.png 2x" width="140" height="112"
               alt="корм гречка 500 грамм.">
             </picture>
             <div class="card__desc-wrapper">
@@ -211,9 +232,12 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/buckwheat-1000g-desktop.webp 1x, img/buckwheat-1000g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/buckwheat-1000g-desktop.png 1x, img/buckwheat-1000g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-1000g-tablet.webp 1x, img/buckwheat-1000g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/buckwheat-1000g-tablet.png 1x, img/buckwheat-1000g-tablet@2x.png 2x">
-              <img class="card__image" src="img/buckwheat-1000g-mobile.png" srcset="img/buckwheat-1000g-mobile@2x.png 2x" width="140" height="112"
+              <source srcset="img/buckwheat-1000g-mobile.webp 1x, img/buckwheat-1000g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/buckwheat-1000g-mobile.png" srcset="img/buckwheat-1000g-mobile.png 1x, img/buckwheat-1000g-mobile@2x.png 2x" width="140" height="112"
               alt="корм гречка 1000 грамм.">
             </picture>
             <div class="card__desc-wrapper">
@@ -242,10 +266,13 @@
         <li class="catalog__item card">
           <div class="card__wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/rice-500g-desktop.webp 1x, img/rice-500g-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)" srcset="img/rice-500g-desktop.png 1x, img/rice-500g-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-500g-tablet.webp 1x, img/rice-500g-tablet@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/rice-500g-tablet.png 1x, img/rice-500g-tablet@2x.png 2x">
-              <img class="card__image" src="img/rice-500g-mobile.png" srcset="img/rice-500g-mobile@2x.png 2x" width="140" height="112"
-                alt="корм рис 500 грамм.">
+              <source srcset="img/rice-500g-mobile.webp 1x, img/rice-500g-mobile@2x.webp 2x" type="image/webp">
+              <img class="card__image" src="img/rice-500g-mobile.png" srcset="img/rice-500g-mobile.png 1x, img/rice-500g-mobile@2x.png 2x" width="140" height="112"
+              alt="корм рис 500 грамм.">
             </picture>
           <div class="card__desc-wrapper">
           <h3 class="card__title">Cat Energy<br class="mob-br">

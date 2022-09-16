@@ -6,6 +6,8 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png">
@@ -16,34 +18,34 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-    <a class="main-header__logo" href="#">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
-        <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
-    </picture>
-    </a>
-    <a class="main-header__logo-text"  href="#">
-      <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
-    </a>
-    <button class="main-header__toggle main-header__toggle--closed" type="button">
-      <span class="main-header__toggle-center visually-hidden">Открыть меню</span>
-      <span class="main-header__toggle-center"></span>
-    </button>
-  </div>
+      <a class="main-header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
+          <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
+        </picture>
+      </a>
+      <a class="main-header__logo-text"  href="#">
+        <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
+      </a>
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
+        <span class="main-header__toggle-center visually-hidden">Открыть меню</span>
+        <span class="main-header__toggle-center"></span>
+      </button>
+    </div>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <ul class="main-navigation__list">
-    <li class="main-navigation__item">
-      <a class="main-navigation__link main-navigation__link--light main-navigation__link--current" href="#">главная</a>
-    </li>
-    <li class="main-navigation__item">
-      <a class="main-navigation__link main-navigation__link--light" href="catalog.html">каталог продукции</a>
-    </li>
-    <li class="main-navigation__item main-navigation__item--last">
-      <a class="main-navigation__link main-navigation__link--light" href="form.html">подбор программы</a>
-    </li>
-  </ul>
-</nav>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--light main-navigation__link--current" href="#">главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--light" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--last">
+          <a class="main-navigation__link main-navigation__link--light" href="form.html">подбор программы</a>
+        </li>
+     </ul>
+    </nav>
   </header>
 
   <main class="main-content">
@@ -52,17 +54,20 @@
 
     <header class="main-content__header hero">
       <div class="hero__wrapper">
-      <h1 class="hero__title main-heading">Функциональное <br>
+        <h1 class="hero__title main-heading">Функциональное <br>
         питание для котов</h1>
-      <p class="hero__text">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
-        <img class="hero__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x"
-        width="280" height="270" alt="Фото банки корма.">
-      </picture>
-      <a class="hero__button button" href="form.html">подобрать программу</a>
-    </div>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1200px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+          <source srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x" type="image/webp">
+          <img class="hero__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x"
+          width="280" height="270" alt="Фото банки корма.">
+        </picture>
+        <a class="hero__button button" href="form.html">подобрать программу</a>
+      </div>
     </header>
 
     <!-- advantages -->
@@ -73,7 +78,6 @@
           Преимущества питания Кэт Энерджи
         </h2>
         <ul class="advantages__list">
-
           <li class="advantages__item advantages__item--slim">
             <h3 class="advantages__title">
               похудение
@@ -104,11 +108,10 @@
     <section class="how-it-works section">
       <h2 class="how-it-works__title heading">Как это работает</h2>
       <ul class="how-it-works__list">
-
         <li class="how-it-works__item how-it-works__item--healthy">
             <p class="how-it-works__description">
             Функциональное питание <br> содержит только полезные <br> питательные вещества.
-          </p>
+            </p>
         </li>
 
         <li class="how-it-works__item how-it-works__item--easy">
@@ -133,45 +136,49 @@
 
     <!-- live example -->
 
-    <section class="live-example section">
-      <div class="live-example__content">
+  <section class="live-example section">
+    <div class="live-example__content">
       <h2 class="live-example__title heading">Живой пример</h2>
-            <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+      <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день.</p>
-    <div class="live-example__wrapper">
-      <dl class="live-example__list">
+     <div class="live-example__wrapper">
+        <dl class="live-example__list">
         <div class="live-example__kg-time live-example__kg-time--left">
-        <dt class="live-example__details-value">5 КГ</dt>
-        <dd class="live-example__details-name">снижение веса</dd>
+          <dt class="live-example__details-value">5 КГ</dt>
+          <dd class="live-example__details-name">снижение веса</dd>
         </div>
-      <div class="live-example__kg-time">
-        <dt class="live-example__details-value">60 ДНЕЙ</dt>
-        <dd class="live-example__details-name">затрачено времени</dd>
-      </div>
+        <div class="live-example__kg-time">
+          <dt class="live-example__details-value">60 ДНЕЙ</dt>
+          <dd class="live-example__details-name">затрачено времени</dd>
+        </div>
       </dl>
 
       <p class="live-example__sum">Затраты на питание: <br> 15 000 РУБ.</p>
+     </div>
     </div>
-  </div>
-  <div class="live-example__cat-wrapper">
-    <div class="live-example__cat-img">
+    <div class="live-example__cat-wrapper">
+     <div class="live-example__cat-img">
       <picture>
+        <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.webp 1x, img/fat-cat-tablet@2x.webp 2x" type="image/webp">
         <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x">
-      <img class="live-example__fat-cat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile.png 1x, img/fat-cat-mobile@2x.png 2x"
-      width="140" height="256" alt="Толстый котик.">
-    </picture>
-    <picture>
-      <source media="(min-width: 768px)" srcset="img/slider-tablet.svg">
-      <img class="live-example__range-slider" src="img/slider-mobile.svg" width="4" height="256" alt="#">
-    </picture>
-    <picture>
-      <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.png 1x, img/thin-cat-tablet@2x.png 2x">
-      <img class="live-example__thin-cat" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile.png 1x, img/thin-cat-mobile@2x.png 2x"
-      width="140" height="256" alt="Худой котик.">
-    </picture>
-    </div>
-      <div class="live-example__control before-after">
+        <source srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x" type="image/webp">
+        <img class="live-example__fat-cat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile.png 1x, img/fat-cat-mobile@2x.png 2x"
+        width="140" height="256" alt="Толстый котик.">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/slider-tablet.svg">
+        <img class="live-example__range-slider" src="img/slider-mobile.svg" width="4" height="256" alt="#">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.webp 1x, img/thin-cat-tablet@2x.webp 2x" type="image/webp">
+        <source media="(min-width: 768px)" srcset="img/thin-cat-tablet.png 1x, img/thin-cat-tablet@2x.png 2x">
+        <source srcset="img/thin-cat-mobile.webp 1x, img/thin-cat-mobile@2x.webp 2x" type="image/webp">
+        <img class="live-example__thin-cat" src="img/thin-cat-mobile.png" srcset="img/thin-cat-mobile.png 1x, img/thin-cat-mobile@2x.png 2x"
+        width="140" height="256" alt="Худой котик.">
+      </picture>
+     </div>
+    <div class="live-example__control before-after">
         <p class="before-after__button">
           <span class="visually-hidden">Было</span>
         </p>
@@ -181,10 +188,9 @@
         <p class="before-after__button">
           <span class="visually-hidden">Стало</span>
         </p>
-      </div>
     </div>
-
-    </section>
+   </div>
+  </section>
 
     <!-- contacts -->
 
