@@ -38,7 +38,6 @@
   background-image: none;
 }
 
-//радиобаттон не работает, не нахожу почему
 .control__input[type="radio"]:checked + .control__icon::before {
   position: absolute;
   top: 8px;

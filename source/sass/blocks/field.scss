@@ -85,13 +85,18 @@
     }
   }
 
-  .field__label--email::before:focus,
-  .field__label--mob::before:focus {
-    background-color: $basic-green;
-  }
-
   @media (min-width: $desktop-width) {
     width: 92%;
     max-width: 568px;
+
+    &--comment {
+      width: 100%;
+      max-width: 100%;
+    }
   }
+}
+
+.field__label--email::before:focus,
+.field__label--mob::before:focus {
+  background-color: $basic-green;
 }

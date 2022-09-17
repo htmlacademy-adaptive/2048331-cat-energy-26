@@ -36,9 +36,14 @@
   border-bottom: 1px solid #cdcdcd;
   margin: 0 -20px;
   width: calc(100% + 40px);
+}
 
-  &:first-child {
-    border-top: 1px solid #cdcdcd;
-    margin-top: 41px;
+.catalog__item:first-child {
+  border-top: 1px solid #cdcdcd;
+  margin-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+    margin-top: 30px;
   }
 }

@@ -2,11 +2,16 @@
   position: relative;
 }
 
-.advantages__button {
+.advantages__link {
+  position: relative;
+  display: block;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
-  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  // &
 }
 
 .advantages__list {
@@ -33,11 +38,17 @@
   &--slim {
     background-image: url("../img/sitting-cat-back.png");
     background-repeat: no-repeat;
+    background-position: 19px 22px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/sitting-cat-back-tablet.png");
+    }
   }
 
   &--pro {
     background-image: url("../img/walking-cat-back.png");
     background-repeat: no-repeat;
+    background-position: 13px 25px;
   }
 
   @media (min-width: $tablet-width) {
@@ -53,8 +64,13 @@
 }
 
 .advantages__title {
-  font-size: 34px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -70,6 +86,10 @@
   width: 227px;
   min-height: 90px;
   text-align: left;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

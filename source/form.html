@@ -17,23 +17,21 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="#">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/cat-energy-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
           <img src="img/cat-energy-logo-mobile.svg"  width="33" height="37" alt="Лого Кэт Энерджи.">
-      </picture>
+        </picture>
       </a>
-    <a class="main-header__logo-text"  href="index.html">
-      <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
-    </a>
-    <button class="main-header__toggle main-header__toggle--closed" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-      <span class="main-header__toggle-center"></span>
-    </button>
-  </div>
-  <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-      <div class="main-navigation__wrapper">
+      <a class="main-header__logo-text"  href="#">
+        <img src="img/cat-energy-name-mobile.svg"   width="101" height="18" alt="Название Кэт Энерджи.">
+      </a>
+      <button class="main-header__toggle main-header__toggle--closed" type="button">
+        <span class="main-header__toggle-center visually-hidden">Открыть меню</span>
+        <span class="main-header__toggle-center"></span>
+      </button>
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="index.html">главная</a>
@@ -45,11 +43,9 @@
             <a class="main-navigation__link main-navigation__link--current" href="#">подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
   </header>
-
   <main class="form-custom">
 
     <header class="form-custom__header section">
@@ -135,7 +131,7 @@
 
       <div class="order-form__comment">
         <p class="order-form__group field">
-          <label class="field__label">
+          <label class="field__label field__label--comment">
 
             <textarea class="field__input field__input--comment" rows="5" name="user-message"
               placeholder="Расскажите обо всех повАдках кота"></textarea>

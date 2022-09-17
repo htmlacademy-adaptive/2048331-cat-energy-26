@@ -18,63 +18,64 @@
     width: 245px;
     margin: 40px;
   }
+}
 
-  &--last {
-    position: relative;
-    background-image: none;
+
+.card--last {
+  position: relative;
+  background-image: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 15px);
+    top: 45px;
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 15px);
+    top: 45px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic-grey;
+    height: 429px;
+    margin-top: 112px;
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
+      width: 60px;
       height: 2px;
-      left: calc(50% - 15px);
-      top: 45px;
-      background-color: #d3d3d3;
+      left: 122px;
+      top: 51px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
+      width: 60px;
       height: 2px;
-      left: calc(50% - 15px);
-      top: 45px;
-      background-color: #d3d3d3;
-      transform: rotate(90deg);
+      left: 122px;
+      top: 51px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 431px;
+    margin-top: 114px;
+
+    &::before {
+      left: 92px;
     }
 
-    @media (min-width: $tablet-width) {
-      border: 2px solid $basic-grey;
-      height: 429px;
-      margin-top: 112px;
-
-      &::before {
-        width: 60px;
-        height: 2px;
-        left: 122px;
-        top: 51px;
-      }
-
-      &::after {
-        width: 60px;
-        height: 2px;
-        left: 122px;
-        top: 51px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 431px;
-      margin-top: 114px;
-
-      &::before {
-        left: 92px;
-      }
-
-      &::after {
-        left: 92px;
-      }
+    &::after {
+      left: 92px;
     }
   }
 }
@@ -86,8 +87,9 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 252px;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
