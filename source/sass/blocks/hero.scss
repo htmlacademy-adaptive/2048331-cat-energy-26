@@ -81,8 +81,9 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 42px;
   text-align: center;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -103,13 +104,14 @@
   text-transform: uppercase;
   margin-bottom: 29px;
   text-align: center;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
     text-align: left;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
   }
 }
 
@@ -140,7 +142,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 0;
+    padding: 7px 0;
     width: 244px;
   }
 

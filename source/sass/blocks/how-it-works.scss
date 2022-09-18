@@ -1,3 +1,9 @@
+.how-it-works__title {
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
+}
+
 .how-it-works__list {
   list-style-type: none;
   margin: 0;
@@ -7,6 +13,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 20px;
     counter-reset: program-counter;
   }
 

@@ -11,7 +11,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  // &
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .advantages__list {
@@ -42,6 +45,7 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/sitting-cat-back-tablet.png");
+      background-position: 447px 82px;
     }
   }
 
@@ -49,9 +53,15 @@
     background-image: url("../img/walking-cat-back.png");
     background-repeat: no-repeat;
     background-position: 13px 25px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/walking-cat-back-tablet.png");
+      background-position: 414px 90px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 77px 52px;
     min-height: 372px;
     margin-bottom: 30px;
   }
@@ -73,9 +83,11 @@
   padding-left: 71px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
+    margin-bottom: 26px;
   }
 }
 
@@ -92,7 +104,10 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    width: 340px;
     font-size: 16px;
     line-height: 1.5;
+    border-bottom: none;
+    margin-bottom: 8px;
   }
 }
