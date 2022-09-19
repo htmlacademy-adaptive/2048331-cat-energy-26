@@ -127,18 +127,23 @@
 
 .advantages__link {
   position: relative;
-  display: block;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: url("../img/icon_arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+
+  &::after {
+    content: url("../img/icon_arrow.svg");
+    margin-left: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.advantages__link:hover::after {
+  content: url("../img/icon_arrow-long.svg");
 }

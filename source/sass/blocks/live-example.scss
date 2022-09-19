@@ -184,6 +184,11 @@
     br {
       display: none;
     }
+    width: 100%;
+    max-width: 330px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
