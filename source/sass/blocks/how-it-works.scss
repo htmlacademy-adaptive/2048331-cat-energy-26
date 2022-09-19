@@ -1,6 +1,18 @@
+.how-it-works {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .how-it-works__title {
+  margin: 0;
+  padding-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     margin-top: 16px;
+    margin-bottom: 26px;
   }
 }
 
@@ -14,8 +26,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 20px;
+    row-gap: 39px;
     counter-reset: program-counter;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +43,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: -2px;
 
   &::before {
     position: absolute;
@@ -38,7 +51,9 @@
     width: 60px;
     height: 60px;
     left: 0;
-    top: 15px;
+    top: 10px;
+    background-color: $basic-green;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -48,25 +63,28 @@
   }
 
   &--easy::before {
-    background-image: url("../img/boiled-water.svg");
+    background-image: url("../img/tub.svg");
   }
 
   &--functional::before {
-    background-image: url("../img/fork-knife.svg");
+    background-image: url("../img/eat.svg");
   }
 
   &--fast::before {
-    background-image: url("../img/clock.svg");
+    background-image: url("../img/alarm.svg");
   }
 
   @media (min-width: $tablet-width) {
-    width: 230px;
-    height: 280px;
+    width: 250px;
+    min-height: 280px;
     counter-increment: program-counter;
 
     &::before {
+      width: 80px;
+      height: 80px;
       left: 0;
       top: 14px;
+      background-size: 50%;
     }
 
     &::after {
@@ -79,7 +97,7 @@
       color: $basic-grey;
       z-index: -1;
       top: -20px;
-      right: -8px;
+      right: 12px;
     }
   }
 
@@ -101,5 +119,6 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
+    padding-top: 45px;
   }
 }

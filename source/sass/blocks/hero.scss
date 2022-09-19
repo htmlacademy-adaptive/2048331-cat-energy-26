@@ -57,7 +57,7 @@
       content: "";
       width: 50%;
       height: 694px;
-      top: -66px;
+      top: -168px;
       right: 0;
       background-image:
         linear-gradient(rgba($basic-green, 0.85),
@@ -80,12 +80,12 @@
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 42px;
+  margin: 0 0 25px;
   text-align: center;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -111,7 +111,11 @@
     line-height: 20px;
     color: #000000;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -120,7 +124,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 200px;
+    bottom: 0;
     left: 30px;
     width: 708px;
     height: auto;
@@ -130,20 +134,23 @@
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    left: 400px;
-    top: 90px;
+    left: 557px;
+    top: -25px;
     z-index: 1;
   }
 }
 
 .hero__button {
-  text-align: center;
+  margin-top: -4px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     font-size: 20px;
     line-height: 20px;
-    padding: 7px 0;
+    padding-top: 7px;
+    padding-bottom: 6px;
     width: 244px;
+    min-height: 54px;
   }
 
   &:hover {

@@ -1,20 +1,11 @@
-.advantages__wrapper {
-  position: relative;
+.advantages {
+  @media (min-width: $desktop-width) {
+    margin-top: -223px;
+  }
 }
 
-.advantages__link {
+.advantages__wrapper {
   position: relative;
-  display: block;
-  color: #000000;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .advantages__list {
@@ -41,11 +32,17 @@
   &--slim {
     background-image: url("../img/sitting-cat-back.png");
     background-repeat: no-repeat;
-    background-position: 19px 22px;
+    background-position: 22px 22px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/sitting-cat-back-tablet.png");
-      background-position: 447px 82px;
+      background-position: 446px 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/sitting-cat-back-desktop.png");
+      background-position: 52px 42px;
+      min-height: 374px;
     }
   }
 
@@ -56,12 +53,17 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/walking-cat-back-tablet.png");
-      background-position: 414px 90px;
+      background-position: 412px 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/walking-cat-back-desktop.png");
+      background-position: 13px 48px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px;
+    padding: 77px 52px 30px;
     min-height: 372px;
     margin-bottom: 30px;
   }
@@ -89,6 +91,11 @@
     text-align: left;
     margin-bottom: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 160px;
+    padding-bottom: 48px;
+  }
 }
 
 .advantages__description {
@@ -108,6 +115,28 @@
     font-size: 16px;
     line-height: 1.5;
     border-bottom: none;
-    margin-bottom: 8px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
+}
+
+.advantages__link {
+  position: relative;
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: url("../img/icon_arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

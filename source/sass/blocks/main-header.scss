@@ -28,6 +28,10 @@
     padding: 0;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .main-header__logo img {
@@ -56,6 +60,7 @@
 .main-header__logo-text {
   width: 101px;
   height: 18px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -73,6 +78,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  right: -10px;
 
   &::before {
     position: absolute;

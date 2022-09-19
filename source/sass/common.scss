@@ -9,7 +9,7 @@
 
 
 @font-face {
-  font-family: "Oswald medium";
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
   font-style: normal;
@@ -28,6 +28,7 @@
 .heading {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

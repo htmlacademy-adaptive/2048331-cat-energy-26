@@ -11,13 +11,20 @@
   border: none;
   display: block;
   width: 100%;
-  height: 400px;
+  height: 362px;
+  background-image: url("../img/location-mobile.png");
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../img/location-tablet.png");
+  }
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 12px 20px;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
@@ -27,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 43px 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +49,7 @@
 }
 
 .contacts__invite {
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -63,7 +71,7 @@
   width: 140px;
 
   @media (max-width: $mobile-width-only) {
-    br {
+    .br-contacts-tablet {
       display: none;
     }
   }
@@ -71,5 +79,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
