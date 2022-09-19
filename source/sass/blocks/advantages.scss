@@ -58,7 +58,7 @@
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/walking-cat-back-desktop.png");
-      background-position: 13px 48px;
+      background-position: 33px 47px;
     }
   }
 
@@ -70,8 +70,8 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    flex-basis: calc(50% - 60px);
-    max-width: calc(50% - 60px);
+    flex-basis: calc(50% - 40px);
+    max-width: calc(50% - 40px);
   }
 }
 
@@ -120,6 +120,8 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
   }
 }
 

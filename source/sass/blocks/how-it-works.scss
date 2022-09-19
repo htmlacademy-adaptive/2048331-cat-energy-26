@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 29px;
+  }
 }
 
 .how-it-works__title {
@@ -33,7 +37,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 70px;
+    column-gap: 75px;
     justify-items: center;
   }
 }
@@ -116,6 +120,9 @@
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
