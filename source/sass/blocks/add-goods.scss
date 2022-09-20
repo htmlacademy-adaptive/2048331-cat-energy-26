@@ -1,9 +1,14 @@
+.add-goods {
+  padding-top: 50px;
+}
+
 .add-goods__box {
   display: flex;
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    max-width: 896px;
+    width: 100%;
+    margin-bottom: 66px;
   }
 }
 
@@ -43,6 +48,14 @@
 
   &:first-child {
     border-top: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -50,6 +63,8 @@
     width: 100%;
     flex-direction: column;
     padding: 26px 38px 28px 37px;
+    min-height: 139px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +111,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
