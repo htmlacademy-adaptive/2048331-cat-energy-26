@@ -7,11 +7,14 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 42px;
     width: 324px;
-    height: 511px;
+    height: 525px;
     margin: 30px;
-    background-image: linear-gradient(#ffffff, #ffffff 15%, #eaeaea 15%, #eaeaea,);
+    margin-bottom: 16px;
+    background-image: linear-gradient(#ffffff, #ffffff 92px, #eaeaea 92px, #eaeaea,);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +27,8 @@
 .card--last {
   position: relative;
   background-image: none;
+  min-height: 209px;
+  padding-top: 78px;
 
   &::before {
     content: "";
@@ -49,20 +54,21 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $basic-grey;
     height: 429px;
-    margin-top: 112px;
+    margin-top: 123px;
+    margin-bottom: 40px;
 
     &::before {
       width: 60px;
       height: 2px;
-      left: 122px;
-      top: 51px;
+      left: 129px;
+      top: 82px;
     }
 
     &::after {
       width: 60px;
       height: 2px;
-      left: 122px;
-      top: 51px;
+      left: 129px;
+      top: 82px;
     }
   }
 
@@ -80,16 +86,22 @@
   }
 }
 
+.card__link {
+  text-decoration: none;
+  color: #222222;
+}
+
 .card__wrapper {
   display: flex;
   justify-content: space-between;
   width: 282px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     width: 252px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,11 +123,19 @@
 
 .card__desc-wrapper {
   width: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .card__details {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
 }
 
 .card__title {
@@ -124,26 +144,24 @@
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 12px;
+
+  &--last {
+    margin: 0 0 9px;
+    display: inline-block;
+  }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
     padding-top: 34px;
     text-align: center;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 46px;
-  }
-
-  &--last {
-    padding-top: 78px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 161px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 160px;
-    }
   }
 }
 
@@ -153,6 +171,16 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+
+  &--last {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .card__button {
