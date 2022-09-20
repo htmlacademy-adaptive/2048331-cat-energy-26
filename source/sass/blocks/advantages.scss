@@ -134,8 +134,18 @@
   text-decoration: none;
 
   &::after {
-    content: url("../img/icon_arrow.svg");
-    margin-left: 15px;
+    content: "";
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    top: calc(50% - 6px);
+    right: -48px;
+
+    @media (min-width: $tablet-width) {
+      right: -58px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -145,5 +155,5 @@
 }
 
 .advantages__link:hover::after {
-  content: url("../img/icon_arrow-long.svg");
+  background-image: url("../img/icon_arrow-long.svg");
 }
