@@ -1,12 +1,11 @@
-.advantages__wrapper {
-  position: relative;
+.advantages {
+  @media (min-width: $desktop-width) {
+    margin-top: -223px;
+  }
 }
 
-.advantages__button {
-  color: #000000;
-  font-size: 16px;
-  line-height: 16px;
-  background-color: transparent;
+.advantages__wrapper {
+  position: relative;
 }
 
 .advantages__list {
@@ -33,33 +32,69 @@
   &--slim {
     background-image: url("../img/sitting-cat-back.png");
     background-repeat: no-repeat;
+    background-position: 22px 22px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/sitting-cat-back-tablet.png");
+      background-position: 446px 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/sitting-cat-back-desktop.png");
+      background-position: 52px 42px;
+      min-height: 374px;
+    }
   }
 
   &--pro {
     background-image: url("../img/walking-cat-back.png");
     background-repeat: no-repeat;
+    background-position: 13px 25px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/walking-cat-back-tablet.png");
+      background-position: 412px 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/walking-cat-back-desktop.png");
+      background-position: 33px 47px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 77px 52px 30px;
     min-height: 372px;
     margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    flex-basis: calc(50% - 60px);
-    max-width: calc(50% - 60px);
+    flex-basis: calc(50% - 40px);
+    max-width: calc(50% - 40px);
   }
 }
 
 .advantages__title {
-  font-size: 34px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: left;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 160px;
+    padding-bottom: 48px;
   }
 }
 
@@ -70,9 +105,55 @@
   width: 227px;
   min-height: 90px;
   text-align: left;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    width: 340px;
     font-size: 16px;
     line-height: 1.5;
+    border-bottom: none;
+    margin-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.advantages__link {
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    top: calc(50% - 6px);
+    right: -48px;
+
+    @media (min-width: $tablet-width) {
+      right: -58px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.advantages__link:hover::after {
+  background-image: url("../img/icon_arrow-long.svg");
 }
