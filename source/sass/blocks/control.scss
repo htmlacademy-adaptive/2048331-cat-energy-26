@@ -1,17 +1,12 @@
 .control {
   position: relative;
   display: block;
-  padding-left: 45px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 63px;
-  }
+  padding-left: 60px;
 }
 
 .control__icon {
   position: absolute;
-  left: -1px;
-  top: -6px;
+  left: 1px;
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
@@ -24,31 +19,14 @@
     width: 40px;
     height: 40px;
   }
-
-  &:hover {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
 
 .control__label {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 30px;
   white-space: nowrap;
   cursor: pointer;
-
-  &:disabled {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 .control__input[type="checkbox"]:checked + .control__icon {
@@ -60,6 +38,7 @@
   background-image: none;
 }
 
+//радиобаттон не работает, не нахожу почему
 .control__input[type="radio"]:checked + .control__icon::before {
   position: absolute;
   top: 8px;

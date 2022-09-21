@@ -3,29 +3,12 @@
   flex-direction: column;
   align-items: center;
   background-color: $basic-grey;
-  padding: 12px 20px 22px;
+  padding: 39px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 29px 20px;
-    min-height: 147px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 109px;
-    padding-right: 109px;
-  }
-}
-
-.main-footer__cat-logo {
-  padding-top: 26px;
-  margin-bottom: -5px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    margin-bottom: 0;
   }
 }
 

@@ -7,104 +7,87 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
     width: 324px;
-    height: 525px;
+    height: 511px;
     margin: 30px;
-    margin-bottom: 16px;
-    background-image: linear-gradient(#ffffff, #ffffff 92px, #eaeaea 92px, #eaeaea,);
+    background-image: linear-gradient(#ffffff, #ffffff 15%, #eaeaea 15%, #eaeaea,);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 40px;
-    margin-bottom: 8px;
-    background-image: linear-gradient(#ffffff, #ffffff 98px, #eaeaea 98px, #eaeaea,);
-  }
-}
-
-
-.card--last {
-  position: relative;
-  background-image: none;
-  min-height: 209px;
-  padding-top: 78px;
-  margin-bottom: 5px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    left: calc(50% - 15px);
-    top: 45px;
-    background-color: #d3d3d3;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    left: calc(50% - 15px);
-    top: 45px;
-    background-color: #d3d3d3;
-    transform: rotate(90deg);
-  }
-
-  @media (min-width: $tablet-width) {
-    border: 2px solid $basic-grey;
-    height: 429px;
-    margin-top: 123px;
-    margin-bottom: 40px;
-    padding-top: 124px;
+  &--last {
+    position: relative;
+    background-image: none;
 
     &::before {
-      width: 60px;
+      content: "";
+      position: absolute;
+      width: 30px;
       height: 2px;
-      left: 129px;
-      top: 82px;
+      left: calc(50% - 15px);
+      top: 45px;
+      background-color: #d3d3d3;
     }
 
     &::after {
-      width: 60px;
+      content: "";
+      position: absolute;
+      width: 30px;
       height: 2px;
-      left: 129px;
-      top: 82px;
+      left: calc(50% - 15px);
+      top: 45px;
+      background-color: #d3d3d3;
+      transform: rotate(90deg);
+    }
+
+    @media (min-width: $tablet-width) {
+      border: 2px solid $basic-grey;
+      height: 429px;
+      margin-top: 112px;
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        left: 122px;
+        top: 51px;
+      }
+
+      &::after {
+        width: 60px;
+        height: 2px;
+        left: 122px;
+        top: 51px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 431px;
+      margin-top: 114px;
+
+      &::before {
+        left: 92px;
+      }
+
+      &::after {
+        left: 92px;
+      }
     }
   }
-
-  @media (min-width: $desktop-width) {
-    height: 431px;
-    margin-top: 135px;
-
-    &::before {
-      left: 92px;
-    }
-
-    &::after {
-      left: 92px;
-    }
-  }
-}
-
-.card__link {
-  text-decoration: none;
-  color: #222222;
 }
 
 .card__wrapper {
   display: flex;
   justify-content: space-between;
   width: 282px;
-  margin-bottom: 9px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    display: block;
+    width: 252px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,25 +109,11 @@
 
 .card__desc-wrapper {
   width: 142px;
-
-  @media (min-width: $tablet-width) {
-    width: 247px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 170px;
-    padding-bottom: 5px;
-  }
 }
 
 .card__details {
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 14px;
-    border-bottom: 1px solid $special-grey;
-  }
 }
 
 .card__title {
@@ -153,39 +122,25 @@
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
     padding-top: 34px;
     text-align: center;
-    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
-    padding-bottom: 8px;
+    padding-top: 46px;
   }
 
   &--last {
-    margin: 0 0 9px;
-    display: inline-block;
-
-    @media (max-width: $mobile-width-only) {
-      br {
-        display: none;
-      }
-    }
+    padding-top: 78px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 0;
+      padding-top: 161px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 36px;
-      margin: 0 0 12px;
+      padding-top: 160px;
     }
   }
 }
@@ -196,34 +151,16 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  margin: 0;
-  text-align: center;
-
-  &--last {
-    margin-bottom: 21px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 60px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    padding-bottom: 16px;
-  }
 }
 
 .card__button {
   @media (min-width: $tablet-width) {
     width: 248px;
     height: 40px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 168px;
     height: 40px;
   }
 
@@ -243,11 +180,6 @@
     background-color: $basic-grey;
     color: $special-dark-grey;
     border: none;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      bottom: -6px;
-    }
 
     &:hover {
       background-color: #ebebeb;

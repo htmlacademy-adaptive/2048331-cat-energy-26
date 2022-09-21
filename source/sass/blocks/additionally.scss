@@ -1,15 +1,15 @@
 .additionally {
-  padding: 0 20px 21px;
+  padding: 34px 20px 21px 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -12px;
-    padding-bottom: 55px;
+    padding-top: 57px;
+    padding-bottom: 54px;
     padding-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 74px;
-    padding-left: 111px;
+    padding-top: 61px;
+    padding-bottom: 54px;
   }
 }
 
@@ -26,10 +26,6 @@
   }
 }
 
-.additionally__item {
-  margin-bottom: 41px;
-}
-
 .additionally__submit {
   display: flex;
   flex-direction: column;
@@ -40,7 +36,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 16px;
   }
 }
 
@@ -55,7 +50,7 @@
     min-height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 568px;
     min-height: 52px;
   }
