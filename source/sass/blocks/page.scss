@@ -8,12 +8,4 @@
   line-height: 18px;
   color: #454545;
   background: #ffffff;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 50px;
-  }
 }

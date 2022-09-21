@@ -15,7 +15,6 @@
     min-height: 810px;
     padding-left: 119px;
     margin-bottom: 0;
-    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +56,7 @@
       content: "";
       width: 50%;
       height: 694px;
-      top: -168px;
+      top: -66px;
       right: 0;
       background-image:
         linear-gradient(rgba($basic-green, 0.85),
@@ -80,12 +79,11 @@
 }
 
 .hero__title {
-  margin: 0 0 25px;
+  margin: 0;
+  margin-bottom: 25px;
   text-align: center;
-  color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -104,18 +102,13 @@
   text-transform: uppercase;
   margin-bottom: 29px;
   text-align: center;
-  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
     text-align: left;
-    margin-bottom: 53px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 49px;
   }
 }
 
@@ -124,7 +117,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 0;
+    top: 200px;
     left: 30px;
     width: 708px;
     height: auto;
@@ -134,23 +127,20 @@
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    left: 557px;
-    top: -25px;
+    left: 400px;
+    top: 90px;
     z-index: 1;
   }
 }
 
 .hero__button {
-  margin-top: -4px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 7px;
-    padding-bottom: 6px;
+    padding: 14px 0;
     width: 244px;
-    min-height: 54px;
   }
 
   &:hover {

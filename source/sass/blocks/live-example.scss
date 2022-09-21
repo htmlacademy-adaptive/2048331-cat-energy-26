@@ -4,36 +4,21 @@
   display: flex;
   flex-direction: column;
   padding-top: 25px;
-  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    border-top: 1px solid #e6e6e6;
-    background-image: linear-gradient(#ffffff, #ffffff 619px, #eaeaea 619px, #eaeaea);
+    background-image: linear-gradient (#ffffff, #ffffff 66%, #eaeaea 66%, #eaeaea);
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-    padding-top: 20px;
-    border: none;
-    min-height: 598px;
     flex-direction: row;
     justify-content: space-between;
-    background-image: linear-gradient(#ffffff, #ffffff 155px, #f2f2f2 155px, #f2f2f2);
+    background-image: linear-gradient (#ffffff, #ffffff 66%, #f2f2f2 66%, #f2f2f2);
   }
 }
 
 .live-example__title {
   margin: 0;
   margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 148px;
-  }
 }
 
 .live-example__text {
@@ -46,14 +31,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    padding-bottom: 59px;
-    padding-right: 10px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 436px;
-    padding-bottom: 74px;
   }
 }
 
@@ -61,7 +38,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -9px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -78,17 +54,12 @@
 .live-example__list {
   display: flex;
   min-width: 280px;
-  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     max-width: 366px;
     margin: 0;
-    padding-bottom: 6px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 57px;
+    padding: 0;
   }
 }
 
@@ -98,11 +69,9 @@
   flex-direction: column;
   align-items: center;
   width: 124px;
-  height: 55px;
+  height: 70px;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  justify-content: center;
-  background-color: inherit;
 
   &--left {
     margin-right: 32px;
@@ -114,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 70px;
+    height: 77px;
   }
 }
 
@@ -131,31 +100,22 @@
 
 .live-example__details-name {
   position: absolute;
+  top: 68px;
   font-family: "Arial", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  background-color: #eaeaea;
+  background-color: inherit;
   padding-left: 5px;
-  padding-right: 7px;
+  padding-right: 5px;
   text-align: center;
   margin: 0;
-  bottom: -16px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
     font-size: 14px;
     line-height: 14px;
-    bottom: -8px;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
   }
 }
 
@@ -165,13 +125,6 @@
   text-align: center;
   text-transform: uppercase;
   display: inline;
-  margin-bottom: 21px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    font-size: 20px;
-    line-height: 28px;
-  }
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -183,11 +136,6 @@
     br {
       display: none;
     }
-    width: 100%;
-    max-width: 330px;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -197,31 +145,12 @@
 
 .live-example__content {
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 86px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
 }
 
 .live-example__cat-wrapper {
-  display: flex;
-  justify-content: center;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
-    padding-top: 12px;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-left: 100px;
-  }
+  //width: 49%;
+  //max-width: 560px;
 }
 
 .live-example__cat-img {
@@ -229,11 +158,10 @@
   flex-wrap: nowrap;
 }
 
-.live-example__fat-cat,
-.live-example__thin-cat {
-  width: 100%;
-  height: auto;
-}
+//.live-example__fat-cat,
+//.live-example__thin-cat {
+//  width: 50%;
+//}
 
 .live-example__range-slider {
   margin-left: -22px;
