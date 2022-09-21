@@ -138,3 +138,16 @@
     display: none;
   }
 }
+
+.main-header__toggle--nojs .main-header__toggle-center {
+  display: none;
+}
+
+.main-header__toggle--nojs.main-header__toggle::before,
+.main-header__toggle--nojs.main-header__toggle::after {
+  display: none;
+}
+
+.main-header__toggle--closed.main-header__toggle--nojs {
+  cursor: unset;
+}

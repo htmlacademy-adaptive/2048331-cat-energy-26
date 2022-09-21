@@ -59,7 +59,7 @@
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form-custom__form order-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="order-form__cat">
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--cat">
             <p class="order-form__field field">
               <label class="field__label">ИМЯ:*
                 <input class="field__input" type="text" name="cat-name" placeholder="барсик">
@@ -75,25 +75,25 @@
             </label>
           </fieldset>
 
-          <fieldset class="order-form__group">
+          <fieldset class="order-form__group order-form__group--radio">
             <ul class="order-form__list order-form__radio">
               <li class="order-form__item">
                 <label class="control control--radio">
-                  <input class="visually-hidden control__input" type="radio" value="weight-loss" checked>
+                  <input class="visually-hidden control__input" type="radio" value="weight-loss" name="program" checked>
                   <span class="control__icon"></span>
                   <span class="control__label">похудение</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="control control--radio">
-                  <input class="visually-hidden control__input" type="radio" value="weight-gain" checked>
+                  <input class="visually-hidden control__input" type="radio" value="weight-gain" name="program" checked>
                   <span class="control__icon"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="control control--radio">
-                  <input class="visually-hidden control__input" type="radio" value="dont-know" checked>
+                  <input class="visually-hidden control__input" type="radio" value="dont-know" name="program" checked>
                   <span class="control__icon"></span>
                   <span class="control__label">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -104,8 +104,7 @@
 
         <div class="line">
           <div class="line__container">
-            <h2 class="line__title">Контактные данные <br>
-              (владельца кота)
+            <h2 class="line__title line__title--owner">Контактные данные <br>&nbsp;(владельца кота)
             </h2>
           </div>
         </div>
@@ -113,20 +112,20 @@
         <div class="order-form__owner">
           <p class="order-form__group  field">
             <label class="field__label field__label--email">E-mail:*
-              <input class="field__input" type="email" name="user-email" placeholder="kuklachev@gmail.com" required>
+              <input class="field__input field__input--email" type="email" name="user-email" placeholder="kuklachev@gmail.com">
             </label>
           </p>
           <p class="order-form__group  field">
             <label class="field__label field__label--mob">Телефон:*
-              <input class="field__input" type="tel" name="user-phone" pattern="8([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+              <input class="field__input field__input--mob" type="tel" name="user-phone" pattern="8([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
                 placeholder="8 (960) 900-60-90">
             </label>
           </p>
         </div>
 
-        <div class="line">
+        <div class="line line--comment">
           <div class="line__container">
-            <h2 class="line__title">Комментарий</h2>
+            <h2 class="line__title line__title--comment">Комментарий</h2>
           </div>
         </div>
 
@@ -134,16 +133,15 @@
           <p class="order-form__group field">
             <label class="field__label field__label--comment">
               <textarea class="field__input field__input--comment" rows="5" name="user-message"
-                placeholder="Расскажите обо всех повАдках кота">
-              </textarea>
+                placeholder="Расскажите обо всех повАдках кота"></textarea>
             </label>
           </p>
         </div>
 
-        <div class="line">
+        <div class="line line--comment">
           <div class="line__container">
-            <h2 class="line__title">Дополнительно</h2>
-         </div>
+            <h2 class="line__title line__title--comment">Дополнительно</h2>
+          </div>
         </div>
 
         <fieldset class="order-form__group">
@@ -151,28 +149,28 @@
             <ul class="order-form__list order-form__checkbox additionally__list">
               <li class="order-form__item additionally__item">
                 <label class="control control--checkbox">
-                  <input class="visually-hidden control__input" type="checkbox" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="shugar" checked>
                   <span class="control__icon"></span>
                   <span class="control__label">сахарозаменитель</span>
                 </label>
               </li>
               <li class="order-form__item additionally__item">
                 <label class="control control--checkbox">
-                  <input class="visually-hidden control__input" type="checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="water">
                   <span class="control__icon"></span>
                   <span class="control__label">питьевая вода</span>
                 </label>
               </li>
               <li class="order-form__item additionally__item">
                 <label class="control control--checkbox">
-                  <input class="visually-hidden control__input" type="checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="milk">
                   <span class="control__icon"></span>
                   <span class="control__label">молоко</span>
                 </label>
               </li>
               <li class="order-form__item additionally__item">
                 <label class="control control--checkbox">
-                  <input class="visually-hidden control__input" type="checkbox">
+                  <input class="visually-hidden control__input" type="checkbox" name="vit">
                   <span class="control__icon"></span>
                   <span class="control__label">витамины</span>
                 </label>

@@ -20,6 +20,8 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     margin: 40px;
+    margin-bottom: 8px;
+    background-image: linear-gradient(#ffffff, #ffffff 98px, #eaeaea 98px, #eaeaea,);
   }
 }
 
@@ -29,6 +31,7 @@
   background-image: none;
   min-height: 209px;
   padding-top: 78px;
+  margin-bottom: 5px;
 
   &::before {
     content: "";
@@ -56,6 +59,7 @@
     height: 429px;
     margin-top: 123px;
     margin-bottom: 40px;
+    padding-top: 124px;
 
     &::before {
       width: 60px;
@@ -74,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     height: 431px;
-    margin-top: 114px;
+    margin-top: 135px;
 
     &::before {
       left: 92px;
@@ -124,7 +128,12 @@
   width: 142px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 247px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    padding-bottom: 5px;
   }
 }
 
@@ -147,11 +156,6 @@
   margin: 0;
   margin-bottom: 12px;
 
-  &--last {
-    margin: 0 0 9px;
-    display: inline-block;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
@@ -161,7 +165,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 46px;
+    padding-top: 40px;
+    padding-bottom: 8px;
+  }
+
+  &--last {
+    margin: 0 0 9px;
+    display: inline-block;
+
+    @media (max-width: $mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 36px;
+      margin: 0 0 12px;
+    }
   }
 }
 
@@ -172,9 +197,14 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  text-align: center;
 
   &--last {
     margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -187,6 +217,9 @@
   @media (min-width: $tablet-width) {
     width: 248px;
     height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -210,6 +243,11 @@
     background-color: $basic-grey;
     color: $special-dark-grey;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      bottom: -6px;
+    }
 
     &:hover {
       background-color: #ebebeb;

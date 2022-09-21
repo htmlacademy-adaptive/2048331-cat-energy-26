@@ -8,22 +8,39 @@
   width: 100%;
   height: 45px;
   border: 1px solid #e7e7e7;
-  padding-left: 14px;
+  padding-left: 17px;
   margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-left: 18px;
+    margin-left: 18px;
+  }
 
   &--comment {
     min-height: 150px;
     margin-left: 0;
 
     @media (min-width: $tablet-width) {
+      margin-left: 0;
       min-height: 174px;
+      line-height: 39px;
+      height: 52px;
+      padding-left: 17px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    height: 52px;
+  &--mob {
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+      margin-left: 12px;
+    }
+  }
+
+  &:hover {
+    border-color: $special-grey;
   }
 
   &:focus {
@@ -33,6 +50,11 @@
       outline: 0;
     }
   }
+}
+
+.field__input--email:invalid,
+.field__input--mob:invalid {
+  border: 1px solid #ff8282;
 }
 
 .field__label {
@@ -45,15 +67,20 @@
     line-height: 30px;
   }
 
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+    }
+  }
+
   &--email {
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      right: 20px;
-      top: 0;
-      bottom: 16px;
+      right: 14px;
+      top: 16px;
       margin-top: auto;
       margin-bottom: auto;
       width: 20px;
@@ -71,9 +98,8 @@
     &::before {
       content: "";
       position: absolute;
-      right: 20px;
-      top: 0;
-      bottom: 16px;
+      right: 14px;
+      top: 16px;
       margin-top: auto;
       margin-bottom: auto;
       width: 20px;
@@ -93,6 +119,23 @@
       width: 100%;
       max-width: 100%;
     }
+
+    &--mob {
+      padding-left: 39px;
+    }
+  }
+}
+
+.field__label--email::before,
+.field__label--mob::before {
+  @media (min-width: $tablet-width) {
+    right: 19px;
+    top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+    top: 17px;
   }
 }
 

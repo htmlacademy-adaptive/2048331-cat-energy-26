@@ -21,12 +21,23 @@
   }
 }
 
-//.main-navigation--opened .main-navigation__list {
-
-//}
+.main-navigation--opened .main-navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
 
 .main-navigation--nojs .main-header__toggle {
   display: none;
+}
+
+.main-navigation--closed.main-navigation--nojs {
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .main-navigation--nojs .main-navigation__list {
@@ -46,11 +57,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //justify-content: space-evenly;
-    //width: 490px;
   }
 }
 

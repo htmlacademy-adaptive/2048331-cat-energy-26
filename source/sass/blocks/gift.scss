@@ -41,8 +41,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 124px;
     margin-bottom: 77px;
-    padding: 0;
     height: 200px;
     background-image:
       linear-gradient(rgba($basic-green, 0.85),
@@ -62,10 +64,14 @@
       linear-gradient(rgba($basic-green, 0.85),
       rgba($basic-green, 0.85)),
       url("../img/cat-catalog-background-desktop.jpg");
-    margin: 35px 0 35px 20px;
     min-width: 245px;
     width: 245px;
     flex: none;
+    justify-content: flex-end;
+    padding: 40px 0;
+    margin: 0 0 35px 20px;
+    height: 288px;
+    align-items: center;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -91,8 +97,10 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 299px;
-    padding-top: 72px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

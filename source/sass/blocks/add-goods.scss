@@ -1,14 +1,23 @@
 .add-goods {
-  padding-top: 50px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .add-goods__box {
   display: flex;
   flex-direction: row;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 66px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
   }
 }
 
@@ -70,8 +79,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    min-height: 72px;
+    padding: 17px 57px 14px 0;
   }
 }
 
@@ -96,6 +105,8 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  display: block;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -112,6 +123,7 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -128,7 +140,8 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    min-width: 244px;
+    width: auto;
   }
 
   &:hover {
