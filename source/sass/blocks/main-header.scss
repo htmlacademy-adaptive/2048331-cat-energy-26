@@ -26,6 +26,11 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
@@ -55,6 +60,7 @@
 .main-header__logo-text {
   width: 101px;
   height: 18px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -72,6 +78,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  right: -10px;
 
   &::before {
     position: absolute;
@@ -115,6 +122,10 @@
   }
 }
 
+.main-header__toggle:active + .main-navigation {
+  display: block;
+}
+
 .main-header__toggle-center {
   position: absolute;
   top: 18px;
@@ -126,4 +137,17 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__toggle--nojs .main-header__toggle-center {
+  display: none;
+}
+
+.main-header__toggle--nojs.main-header__toggle::before,
+.main-header__toggle--nojs.main-header__toggle::after {
+  display: none;
+}
+
+.main-header__toggle--closed.main-header__toggle--nojs {
+  cursor: unset;
 }
