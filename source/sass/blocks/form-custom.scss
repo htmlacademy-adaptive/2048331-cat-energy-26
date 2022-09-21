@@ -2,11 +2,21 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 73px;
+    padding-top: 17px;
+  }
+}
+
+.form-custom__header {
+  @media (min-width: $tablet-width) {
+    padding-left: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 109px;
   }
 }
 
@@ -18,12 +28,14 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
     margin-top: 54px;
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
-    margin-bottom: 66px;
+    margin-bottom: 12px;
   }
 }
