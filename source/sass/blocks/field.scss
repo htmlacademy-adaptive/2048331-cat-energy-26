@@ -1,36 +1,21 @@
-.field__input {
-  box-sizing: border-box;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  width: 100%;
-  height: 45px;
-  border: 1px solid #e7e7e7;
-  padding-left: 14px;
-  margin-left: 12px;
-
-  &--comment {
-    min-height: 150px;
-    margin-left: 0;
+.field {
+  &--email {
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
-      min-height: 174px;
+      margin-bottom: 22px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    height: 52px;
+  &--mob {
+    @media (min-width: $desktop-width) {
+      padding-left: 49px;
+    }
   }
 
-  &:focus {
-    border-color: $special-dark-grey;
-
-    &:not(:focus-visible) {
-      outline: 0;
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
     }
   }
 }
@@ -45,53 +30,124 @@
     line-height: 30px;
   }
 
-  &--email {
-    position: relative;
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: 20px;
-      top: 0;
-      bottom: 16px;
-      margin-top: auto;
-      margin-bottom: auto;
-      width: 20px;
-      height: 14px;
-      background-image: url("../img/icon_email.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      cursor: pointer;
+    &--comment {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.field__input {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  padding-left: 14px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+    padding-left: 18px;
+    margin-left: 18px;
+  }
+
+  &--comment {
+    min-height: 150px;
+    margin-left: 0;
+    padding-top: 9px;
+    resize: none;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      min-height: 174px;
+      line-height: 39px;
+      height: 52px;
+      padding-left: 17px;
+    }
+  }
+
+  &--email {
+    background-image: url("../img/icon_email.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    background-position-x: 92%;
+    padding-left: 15px;
+    margin-left: 11px;
+
+    &:focus {
+      background-image: url("../img/icon_email-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon_email-error.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position-x: 97%;
+      padding-left: 20px;
+      margin-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 96%;
     }
   }
 
   &--mob {
-    position: relative;
+    background-image: url("../img/mob-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    background-position-x: 93%;
+    padding-left: 16px;
+    margin-left: 9px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      right: 20px;
-      top: 0;
-      bottom: 16px;
-      margin-top: auto;
-      margin-bottom: auto;
-      width: 20px;
-      height: 20px;
-      background-image: url("../img/mob-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      cursor: pointer;
+    &:focus {
+      background-image: url("../img/mob-icon-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/mob-icon-error.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position-x: 96%;
+      padding-left: 20px;
+      margin-left: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position-x: 97%;
+      padding-left: 17px;
+      margin-left: 19px;
     }
   }
 
-  .field__label--email::before:focus,
-  .field__label--mob::before:focus {
-    background-color: $basic-green;
+  &:hover {
+    border-color: $special-grey;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 92%;
-    max-width: 568px;
+  &:focus {
+    border-color: $special-dark-grey;
+
+    &:not(:focus-visible) {
+      outline: 0;
+    }
   }
+}
+
+.field__input--email:invalid,
+.field__input--mob:invalid {
+  border: 1px solid #ff8282;
 }

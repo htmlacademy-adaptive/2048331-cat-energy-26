@@ -1,8 +1,23 @@
+.add-goods {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
+}
+
 .add-goods__box {
   display: flex;
   flex-direction: row;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 87px;
     max-width: 896px;
   }
 }
@@ -11,7 +26,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -42,7 +56,15 @@
   border-bottom: 1px solid $special-grey;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $special-grey;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid $special-grey;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -50,13 +72,15 @@
     width: 100%;
     flex-direction: column;
     padding: 26px 38px 28px 37px;
+    min-height: 139px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    min-height: 72px;
+    padding: 16px 0 13px 0;
   }
 }
 
@@ -67,9 +91,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    .add-goods__wrapper:nth-child(2) {
-      width: 60%;
-    }
+    padding-top: 6px;
+
     align-items: center;
     width: 100%;
   }
@@ -81,6 +104,8 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  display: block;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -91,20 +116,29 @@
 .add-goods__details {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 60%;
+    width: 44%;
     justify-content: space-between;
     padding-right: 38px;
+    padding-top: 5px;
+  }
+}
+
+.add-goods__price {
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
   }
 }
 
@@ -112,6 +146,16 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    min-width: 244px;
+    width: auto;
+  }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -2,11 +2,33 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 73px;
+    padding-top: 17px;
+  }
+}
+
+.form-custom__header {
+  @media (min-width: $tablet-width) {
+    padding-left: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 109px;
+  }
+}
+
+.form-custom__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -14,16 +36,18 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 37px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
-    margin-bottom: 66px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
-    margin-bottom: 66px;
+    margin-bottom: 13px;
   }
 }

@@ -9,7 +9,7 @@
 
 
 @font-face {
-  font-family: "Oswald medium";
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
     url("../fonts/oswaldmedium.woff") format("woff");
   font-style: normal;
@@ -23,11 +23,23 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .heading {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .button {
@@ -49,7 +61,12 @@
   display: block;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 
+  &--full-screen {
+    max-width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;

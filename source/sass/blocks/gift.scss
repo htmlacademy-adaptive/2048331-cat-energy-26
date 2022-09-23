@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  position: relative;
 
   width: 100%;
   height: 290px;
@@ -11,6 +13,29 @@
     url("../img/cat-catalog-background-mobile.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 186px;
+  margin-bottom: 33px;
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon_gift.svg");
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 57px;
+    left: 102px;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      left: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 85px;
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -20,8 +45,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(rgba($basic-green, 0.85),
-    rgba($basic-green, 0.85)),
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 124px;
+    margin-bottom: 77px;
+    height: 200px;
+    background-image:
+      linear-gradient(rgba($basic-green, 0.85),
+      rgba($basic-green, 0.85)),
       url("../img/cat-catalog-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -33,13 +64,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(rgba($basic-green, 0.85),
-    rgba($basic-green, 0.85)),
+    background-image:
+      linear-gradient(rgba($basic-green, 0.85),
+      rgba($basic-green, 0.85)),
       url("../img/cat-catalog-background-desktop.jpg");
-    margin: 35px 0 35px 20px;
     min-width: 245px;
     width: 245px;
     flex: none;
+    justify-content: flex-end;
+    padding: 40px 0;
+    margin: 0 0 35px 80px;
+    height: 288px;
+    align-items: center;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -51,7 +87,7 @@
 }
 
 .gift__promo {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -62,4 +98,13 @@
   color: #ffffff;
   width: 161px;
   min-height: 60px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

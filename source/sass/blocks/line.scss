@@ -4,11 +4,79 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 15px;
     height: 2px;
     width: 100%;
     background-color: $basic-green;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 23px;
+    }
+  }
+
+  &--owner {
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    &::before {
+      top: 13px;
+
+      @media (min-width: $tablet-width) {
+        top: 23px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 10px;
+    }
+  }
+
+  &--comment {
+    margin-top: 24px;
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 19px;
+      margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -7px;
+      margin-bottom: 71px;
+    }
+  }
+
+  &--additionally {
+    margin-top: 24px;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 67px;
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 70px;
+    }
+  }
+
+
+  &--add-goods {
+    margin-bottom: 19px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
   }
 }
 
@@ -25,10 +93,16 @@
   padding: 0 20px;
   background-color: #ffffff;
   display: inline-block;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     padding: 0 36px;
@@ -37,6 +111,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    margin-left: -40px;
+    margin-left: -32px;
   }
 }
