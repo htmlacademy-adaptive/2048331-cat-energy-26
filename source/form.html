@@ -57,9 +57,9 @@
 
     <section class="form-custom__order">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <form class="form-custom__form order-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="order-form__cat">
-          <fieldset class="order-form__group order-form__group--cat">
+          <fieldset class="order-form__group order-form__group--cat-data">
             <p class="order-form__field field">
               <label class="field__label">ИМЯ:*
                 <input class="field__input" type="text" name="cat-name" placeholder="барсик">
@@ -70,9 +70,11 @@
                 <input class="field__input" type="text" name="cat-weight" placeholder="7">
               </label>
             </p>
-            <label class="field__label field">Возраст (лет):
+            <p class="order-form__field field">
+            <label class="field__label">Возраст (лет):
               <input class="field__input" type="text" name="cat-weight" placeholder="7">
             </label>
+            </p>
           </fieldset>
 
           <fieldset class="order-form__group order-form__group--radio">
@@ -102,21 +104,21 @@
           </fieldset>
         </div>
 
-        <div class="line">
+        <div class="line line--owner">
           <div class="line__container">
-            <h2 class="line__title line__title--owner">Контактные данные <br>&nbsp;(владельца кота)
+            <h2 class="line__title line__title--owner">Контактные данные&nbsp;<br>(владельца кота)
             </h2>
           </div>
         </div>
 
         <div class="order-form__owner">
-          <p class="order-form__group  field">
-            <label class="field__label field__label--email">E-mail:*
+          <p class="order-form__group  field  field--email">
+            <label class="field__label">E-mail:*
               <input class="field__input field__input--email" type="email" name="user-email" placeholder="kuklachev@gmail.com">
             </label>
           </p>
-          <p class="order-form__group  field">
-            <label class="field__label field__label--mob">Телефон:*
+          <p class="order-form__group  field  field--mob">
+            <label class="field__label">Телефон:*
               <input class="field__input field__input--mob" type="tel" name="user-phone" pattern="8([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"
                 placeholder="8 (960) 900-60-90">
             </label>
@@ -125,12 +127,12 @@
 
         <div class="line line--comment">
           <div class="line__container">
-            <h2 class="line__title line__title--comment">Комментарий</h2>
+            <h2 class="line__title">Комментарий</h2>
           </div>
         </div>
 
         <div class="order-form__comment">
-          <p class="order-form__group field">
+          <p class="order-form__group field field--comment">
             <label class="field__label field__label--comment">
               <textarea class="field__input field__input--comment" rows="5" name="user-message"
                 placeholder="Расскажите обо всех повАдках кота"></textarea>
@@ -138,37 +140,37 @@
           </p>
         </div>
 
-        <div class="line line--comment">
+        <div class="line line--additionally">
           <div class="line__container">
-            <h2 class="line__title line__title--comment">Дополнительно</h2>
+            <h2 class="line__title">Дополнительно</h2>
           </div>
         </div>
 
         <fieldset class="order-form__group">
           <div class="additionally">
-            <ul class="order-form__list order-form__checkbox additionally__list">
-              <li class="order-form__item additionally__item">
+            <ul class="order-form__list additionally__list">
+              <li class="additionally__item">
                 <label class="control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="shugar" checked>
                   <span class="control__icon"></span>
                   <span class="control__label">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="order-form__item additionally__item">
+              <li class="additionally__item">
                 <label class="control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="water">
                   <span class="control__icon"></span>
                   <span class="control__label">питьевая вода</span>
                 </label>
               </li>
-              <li class="order-form__item additionally__item">
+              <li class="additionally__item">
                 <label class="control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="milk">
                   <span class="control__icon"></span>
                   <span class="control__label">молоко</span>
                 </label>
               </li>
-              <li class="order-form__item additionally__item">
+              <li class="additionally__item">
                 <label class="control control--checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="vit">
                   <span class="control__icon"></span>
@@ -178,7 +180,7 @@
             </ul>
             <div class="additionally__submit">
               <button class="additionally__button button" type="submit">отправить заявку</button>
-              <span class="order-form__note"><sup>*</sup> — Обязательные поля</span>
+              <span class="additionally__note"><sup>*</sup> — Обязательные поля</span>
             </div>
           </div>
         </fieldset>
@@ -211,47 +213,49 @@
   <!-- footer -->
 
   <footer class="main-footer">
-    <a class="main-footer__cat-logo">
-      <img src="img/cat-energy-name-mobile.svg" width="128" height="24" alt="Название Кэт Энерджи.">
-    </a>
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <svg width="27" height="17">
-              <use href="./img/sprite.svg#vk"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <svg width="24" height="19">
-              <use href="./img/sprite.svg#youtube"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <svg width="20" height="18">
-              <use href="./img/sprite.svg#telegram"></use>
-            </svg>
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__logo">
-      <a class="main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="main-footer__logo-text" width="113" height="16">
-          <use href="./img/sprite.svg#htmlacademy"></use>
-        </svg>
-        <svg class="main-footer__logo-pic" width="27" height="34">
-          <use href="./img/sprite.svg#HTMLacademy-logo"></use>
-        </svg>
-        <span class="visually-hidden">HTML Academy</span>
+    <div class="main-footer__inner">
+      <a class="main-footer__cat-logo">
+        <img src="img/cat-energy-name-mobile.svg" width="128" height="24" href="index.html" alt="Название Кэт Энерджи.">
       </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg width="27" height="17">
+                <use href="./img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="24" height="19">
+                <use href="./img/sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <svg width="20" height="18">
+                <use href="./img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__logo">
+        <a class="main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="main-footer__logo-text" width="113" height="16">
+            <use href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+          <svg class="main-footer__logo-pic" width="27" height="34">
+            <use href="./img/sprite.svg#HTMLacademy-logo"></use>
+          </svg>
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
   <script src="./js/script.js"></script>

@@ -12,11 +12,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 610px;
     position: static;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin: 0 auto;
     background-color: unset;
   }
 }
@@ -57,6 +57,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
   }
 }
 

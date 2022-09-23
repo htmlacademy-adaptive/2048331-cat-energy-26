@@ -11,7 +11,7 @@
     padding-right: 36px;
     padding-bottom: 42px;
     width: 324px;
-    height: 525px;
+    min-height: 525px;
     margin: 30px;
     margin-bottom: 16px;
     background-image: linear-gradient(#ffffff, #ffffff 92px, #eaeaea 92px, #eaeaea,);
@@ -58,8 +58,8 @@
     border: 2px solid $basic-grey;
     height: 429px;
     margin-top: 123px;
-    margin-bottom: 40px;
-    padding-top: 124px;
+    margin-bottom: 18px;
+    padding-top: 157px;
 
     &::before {
       width: 60px;
@@ -79,6 +79,8 @@
   @media (min-width: $desktop-width) {
     height: 431px;
     margin-top: 135px;
+    padding-top: 117px;
+    margin-bottom: 0;
 
     &::before {
       left: 92px;
@@ -255,7 +257,7 @@
 
     &:active {
       background-color: #ebebeb;
-      color: rgba(#444444, 0.3);
+      color: rgba($special-dark-grey, 0.3);
     }
   }
 }

@@ -1,13 +1,10 @@
 .live-example {
-  margin: 0;
   background: #eaeaea;
-  display: flex;
-  flex-direction: column;
   padding-top: 25px;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 44px;
     border-top: 1px solid #e6e6e6;
     background-image: linear-gradient(#ffffff, #ffffff 619px, #eaeaea 619px, #eaeaea);
   }
@@ -16,10 +13,20 @@
     padding-bottom: 0;
     padding-top: 20px;
     border: none;
+    background-image: linear-gradient(#ffffff, #ffffff 155px, $basic-grey 155px, $basic-grey);
+  }
+}
+
+.live-example__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
     min-height: 598px;
     flex-direction: row;
     justify-content: space-between;
-    background-image: linear-gradient(#ffffff, #ffffff 155px, #f2f2f2 155px, #f2f2f2);
   }
 }
 
@@ -213,7 +220,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+    padding-bottom: 63px;
     padding-top: 12px;
   }
 
@@ -227,6 +234,12 @@
 .live-example__cat-img {
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
 
 .live-example__fat-cat,
@@ -235,9 +248,67 @@
   height: auto;
 }
 
-.live-example__range-slider {
-  margin-left: -22px;
-  margin-right: -22px;
-  position: relative;
+.live-example__range {
+  position: absolute;
+  content: "";
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
+  background-color: $special-grey-2;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green;
+
+    .live-example__slider {
+      border: 2px solid $basic-green;
+    }
+
+    .live-example__slider::before,
+    .live-example__slider::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.live-example__slider {
+  content: "";
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 22px);
   width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid $special-grey-2;
+  z-index: 1;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color: $special-grey-2;
+    width: 8px;
+    height: 18px;
+    top: 10px;
+    right: 8px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color: $special-grey-2;
+    width: 8px;
+    height: 18px;
+    top: 10px;
+    left: 8px;
+    transform: rotate(180deg);
+  }
 }

@@ -31,6 +31,10 @@
       top: 60px;
       left: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 85px;
+    }
   }
 
   @media (min-resolution: 2dppx) {

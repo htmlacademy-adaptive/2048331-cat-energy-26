@@ -28,12 +28,13 @@
     flex-wrap: wrap;
     margin: 0 -30px;
     width: calc(100% + 60px);
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 -40px;
     width: calc(100% + 80px);
-    padding-bottom: 8px;
+    padding-bottom: 32px;
   }
 }
 
@@ -42,7 +43,7 @@
   display: block;
   padding-top: 19px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special-grey;
   margin: 0 -20px;
   width: calc(100% + 40px);
 
@@ -52,7 +53,7 @@
 }
 
 .catalog__item:first-child {
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $special-grey;
   margin-top: 1px;
 
   @media (min-width: $tablet-width) {

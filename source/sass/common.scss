@@ -61,7 +61,12 @@
   display: block;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 
+  &--full-screen {
+    max-width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
