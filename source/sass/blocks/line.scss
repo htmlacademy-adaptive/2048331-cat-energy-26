@@ -4,35 +4,79 @@
   &::before {
     content: "";
     position: absolute;
-    top: 34px;
+    top: 15px;
     height: 2px;
     width: 100%;
     background-color: $basic-green;
     z-index: -1;
-  }
 
-  @media (min-width: $tablet-width) {
-    &::before {
-      top: 35px;
+    @media (min-width: $tablet-width) {
+      top: 23px;
     }
   }
 
-  &--add-goods {
-    @media (min-width: $tablet-width) {
-      &::before {
-        top: 50px;
+  &--owner {
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    &::before {
+      top: 13px;
+
+      @media (min-width: $tablet-width) {
+        top: 23px;
       }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 10px;
     }
   }
 
   &--comment {
-    &::before {
-      top: 29px;
-    }
+    margin-top: 24px;
+    margin-bottom: 38px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 38px;
+      margin-top: 19px;
+      margin-bottom: 75px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -7px;
+      margin-bottom: 71px;
+    }
+  }
+
+  &--additionally {
+    margin-top: 24px;
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 67px;
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 70px;
+    }
+  }
+
+
+  &--add-goods {
+    margin-bottom: 19px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
   }
 }
 
@@ -52,16 +96,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-
-  &--owner {
-    margin-top: 14px;
-    margin-bottom: 36px;
-  }
-
-  &--comment {
-    margin-top: 14px;
-    margin-bottom: 38px;
-  }
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     br {

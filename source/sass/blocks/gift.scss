@@ -31,6 +31,10 @@
       top: 60px;
       left: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 85px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
@@ -69,7 +73,7 @@
     flex: none;
     justify-content: flex-end;
     padding: 40px 0;
-    margin: 0 0 35px 20px;
+    margin: 0 0 35px 80px;
     height: 288px;
     align-items: center;
 

@@ -106,9 +106,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 200px;
     position: relative;
     margin-bottom: -2px;
     counter-increment: program-counter;
+  }
+
+  @media (min-width: 1440px) {
+    width: 250px;
   }
 }
 
