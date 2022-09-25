@@ -77,3 +77,8 @@
     height: 18px;
   }
 }
+
+.control__input:focus + .control__icon {
+  outline: none;
+  border: 2px solid $special-dark-grey;
+}
