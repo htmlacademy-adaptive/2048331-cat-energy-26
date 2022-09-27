@@ -139,6 +139,7 @@
   }
 
   &:focus {
+    outline: none;
     border-color: $special-dark-grey;
 
     &:not(:focus-visible) {
